@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/shared/basscss.css" rel="stylesheet">
+    <!-- Basscss | http://basscss.com | MIT License -->
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .t-frame {
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .t-frame iframe {
+            display: inline-block;
+            width: 320px;
+            border: 1px solid #E6E2D9;
+            height: 470px;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .1), 0 2px 2px -2px rgba(0, 0, 0, .02), 0 1px 4px 0 rgba(0, 0, 0, .04)
+        }
+
+        /* .t-frame--small iframe {
+            width: 240px;
+        } */
+
+        /* .t-frame--large iframe {
+            width: 600px;
+        } */
+
+        .t-center {
+            width: 110rem;
+            margin: auto;
+        }
+    </style>
+</head>
+
+
+<body class="fullheight p4 m0 h4 line-height-4">
+    <div class="t-center">
+        <div class="h2">A 3-tiered design-in-browser workflow for Twitch extensions</div>
+        <div class="mb4">This is a POC project to demonstrate my 3-step design-in-browser workflow as well as a tiered
+            CSS
+            approach
+            that aims
+            to be reusable
+            while allowing
+            artistic
+            freedom. </div>
+        <div class="h3 h3 my2">Tier 1: layout the responsive screens using BassCSS</div>
+        <ul>
+            <li>After sketching out the wireframes and user flow on paper, I use <a target="_blank"
+                    href="https://github.com/basscss/basscss">BassCSS</a> (MIT
+                License) to build the fluid and
+                responsive html pages.</li>
+            <li>Benefits:
+                <ul>
+                    <li>The file size of BassCSS is only 14kb. Its utility CSS classes are very
+                        comprehensive. It's
+                        possible to build
+                        fluid layout without writing any
+                        additional CSS, thus the html
+                        pages become
+                        very reusable.</li>
+                    <li>BassCss has <a target="_blank" href="https://basscss.com/">documentation and code snippets.</a>
+                    </li>
+                    <li>Separating the layout CSS from the style CSS makes the layout less prone to breaking and much
+                        easier
+                        to
+                        maintain.</li>
+                    <li>With the functional class names, the CSS becomes very readable.</li>
+                    <li>It's much easier to create professional-looking UI with good
+                        alignment, padding, margin, etc. with something like BassCSS or other CSS frameworks than
+                        building
+                        everything from scratch.</li>
+                </ul>
+            </li>
+            <li>UI examples with fluid layout using only <a target="_blank" href="css/shared/basscss.css">BassCSS</a>
+                as defined as Tier 1
+                CSS in this repository:
+                <div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1.htm" target="_new">Open in a its own window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1_full-screen_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1_full-screen_dialog.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1_full-screen_dialog_details.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1_full-screen_dialog_details.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1_confirmation_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1_confirmation_dialog.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1_notif.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1_notif.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="h3 h3 my2">Tier 2: reusable CSS for generic styling</div>
+        <ul>
+            <li>The goal of this step of the workflow is to create a set of styling CSS that is reusable for future
+                Twitch
+                extension
+                projects.</li>
+            <li>This is the set of CSS that will become the "style guide" and needs time to be built out and tested
+                cross browsers, so
+                together
+                with BassCSS it can be shared with the community as boilerplates.</li>
+            <li>The examples below add prefix "e-" to the class names of this Tier 2 CSS to differentiate from the
+                BassCSS
+                class names</li>
+            <li>Examples of styled UI using only <a target="_blank" href="css/shared/basscss.css">Tier
+                    1</a>
+                and <a target="_blank" href="css/shared/styles.css">Tier 2</a> CSS (shown in light mode):
+                <div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-light.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-light.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-light_full-screen_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-light_full-screen_dialog.htm" target="_new">Open in a its
+                                own
+                                window</a>
+                            <div>Reload to see the slide-in transition</div>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-light_full-screen_dialog_details.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-light_full-screen_dialog_details.htm" target="_new">Open in a
+                                its
+                                own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-light_confirmation_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-light_confirmation_dialog.htm" target="_new">Open in
+                                a
+                                its
+                                own
+                                window</a>
+                            <div>Reload to see the pop-up transition
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-light_notif.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-light_notif.htm" target="_new">Open in
+                                a
+                                its
+                                own
+                                window</a>
+                            <div>Reload to see the slide-up transition
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>Same examples but in dark mode:
+                <div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-dark.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-dark.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-dark_full-screen_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-dark_full-screen_dialog.htm" target="_new">Open in a its
+                                own
+                                window</a>
+                            <div>Reload to see the slide-in transition</div>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-dark_full-screen_dialog_details.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-dark_full-screen_dialog_details.htm" target="_new">Open in a
+                                its
+                                own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-dark_confirmation_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-dark_confirmation_dialog.htm" target="_new">Open in
+                                a
+                                its
+                                own
+                                window</a>
+                            <div>Reload to see the pop-up transition
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-dark_notif.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-dark_notif.htm" target="_new">Open in
+                                a
+                                its
+                                own
+                                window</a>
+                            <div>Reload to see the slide-up transition
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>Other examples using only Tier 1 and Tier 2 CSS but allowing some channel-specific customization:
+                drlupo's channel theme (red and
+                purple, see the <a target="_blank" href="css/drlupo.css">CSS for DrLupo's colors</a>), Ninja's (blue and
+                yellow, see
+                the <a target="_blank" href="css/ninja.css">CSS for Ninja's
+                    colors</a>), and
+                professorbroman's (green and dark green, see the <a target="_blank" href="css/professorbroman.css">CSS
+                    for ProfessorBroman's
+                    colors</a>). The
+                header images here are from their channel page panels. Many creators on Twitch today upload their own
+                branded
+                header images for the panels.
+                <div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-drlupo.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-drlupo.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-ninja.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-ninja.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2-professorbroman.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2-professorbroman.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                The examples above assume that creator can customize:
+                <ul>
+                    <li>a dark brand color (used for background)</li>
+                    <li>a tone slightly lighter than the brand color (used for the alternative background color)</li>
+                    <li>a bright accent color</li>
+                    <li>a Google font, letter spacing, font style (applied to .bold in the examples)</li>
+                    <li>having .rounded or not</li>
+                    <li>the opacity of color variables: --c-text, --c-text-alt and --c-text-alt-2</li>
+                    <li>There should be some kind of auto detect feature: if the accent color is dark enough, the text
+                        of the Button and the Tabs will use
+                        .e-c-white; if not, .e-c-black
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="h3 h3 my2">Tier 3: game theme example</div>
+        <ul>
+            <li>This tier of the styling CSS is the least reusable. It either overwrites or replaces classes defined in
+                Tier 2.</li>
+            <li>Class names can be semantic or utility</li>
+            <li>For this example, I'm using prefix "fortnite-" for the class names.</li>
+            <li>UI examples of a dummy project Fortnight World Cup Event using <a target="_blank"
+                    href="css/shared/basscss.css">Tier
+                    1</a>, <a target="_blank" href="css/shared/styles.css">Tier 2</a> and <a target="_blank"
+                    href="css/fortnite.css">Tier 3</a> CSS:
+                <div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2&3-fortnite.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2&3-fortnite.htm" target="_new">Open in a its own
+                                window</a>
+                        </div>
+                    </div>
+                    <div class="t-frame">
+                        <iframe src="html-examples/tier1&2&3-fortnite_confirmation_dialog.htm"></iframe>
+                        <div class="h6">
+                            <a href="html-examples/tier1&2&3-fortnite_confirmation_dialog.htm" target="_new">Open in a
+                                its own
+                                window</a>
+                            <div>Reload to see the pop-up transition
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

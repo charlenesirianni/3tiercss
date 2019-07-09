@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="fullheight">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tier1&2 Light</title>
+    <link href="../css/generic.css" rel="stylesheet">
+</head>
+
+<body class="fullheight p0 m0 h5 line-height-4 e-theme-light">
+    <!-- Start: Full-screen Dialog -->
+    <div class="absolute flex justify-center items-center fullheight fullwidth e-backdrop z3 e-ani-pop-up">
+        <div class="rounded mx4 p3 flex flex-column max-width-2 e-elevation1 e-c-bg-base e-border">
+            <header class="mb1 bold">
+                Discard changes?
+            </header>
+            <main class="flex-auto">
+                <div>You have not saved your options.</div>
+                <div class="mt3">
+                    <button class="py1 px2 rounded e-button">
+                        OK
+                    </button><button class="ml2 py1 px2 rounded e-button e-button--hollow">
+                        Cancel
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- End: Full-screen Dialog -->
+    <div class="fullheight flex flex-column e-c-bg-body">
+        <header class="z2">
+            <!-- <div class="px2 py3">(Creator's Header Image Here)</div> -->
+            <!-- Start: Tabs -->
+            <div class="px2 e-c-bg-base e-border-bottom e-elevation1">
+                <div class="flex">
+                    <div class="flex-auto">
+                        <ul class="flex m0 p0 h6 caps">
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-end justify-center center px2 py1 text-decoration-none"
+                                    href="#">Tab One</a>
+                            </li>
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-end justify-center center px2 py1 text-decoration-none"
+                                    href="#">Tab Two</a>
+                                <div class="absolute bottom-0 fullwidth e-h4px e-c-bg-accent"></div>
+                            </li>
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-end justify-center center px2 py1 text-decoration-none"
+                                    href="#">Tab Three</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center pl2">
+                        <div class="ml1">
+                            <button class="rounded e-iconbutton">
+                                <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                    <path
+                                        d="M10 2c1.93 0 3.5 1.57 3.5 3.5S11.93 9 10 9 6.5 7.43 6.5 5.5 8.07 2 10 2zm6.447 10.105c.34.17.553.516.553.896v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4c0-.38.214-.726.552-.896.091-.045 2.26-1.104 6.448-1.104 4.187 0 6.357 1.06 6.447 1.104z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- <div class="ml1">
+                                <button class="flex flex-row items-center justify-center p1 rounded">
+                                    <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M10 2c1.93 0 3.5 1.57 3.5 3.5S11.93 9 10 9 6.5 7.43 6.5 5.5 8.07 2 10 2zm6.447 10.105c.34.17.553.516.553.896v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4c0-.38.214-.726.552-.896.091-.045 2.26-1.104 6.448-1.104 4.187 0 6.357 1.06 6.447 1.104z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                    <div  class="mx1 nowrap">Button</div>
+                                </button>
+                            </div>
+                            <div class="ml1">
+                                <button class="flex flex-column items-center justify-center p1 rounded">
+                                    <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M10 2c1.93 0 3.5 1.57 3.5 3.5S11.93 9 10 9 6.5 7.43 6.5 5.5 8.07 2 10 2zm6.447 10.105c.34.17.553.516.553.896v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4c0-.38.214-.726.552-.896.091-.045 2.26-1.104 6.448-1.104 4.187 0 6.357 1.06 6.447 1.104z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                    <div  class="mx1 nowrap">Button</div>
+                                </button>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End: Tabs -->
+            <!-- <div class="px2 py1">(graphics)</div> -->
+        </header>
+        <main class="flex-auto overflow-auto flex-column px2 pb3">
+            <div class="mt3 pt1">
+                <div class="flex mb2 items-center">
+                    <div class="flex-auto">
+                        <div class="inline caps bold mr2">Weekly Schedule</div>
+                        <div class="inline nowrap h6 e-c-alt-2">Pacific
+                            Daylight Time</div>
+                    </div>
+                    <div class="ml1">
+                        <button class="rounded e-button e-button--small">
+                            <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                <path
+                                    d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                            <span class="nowrap">Button</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex mb2 h6">
+                    <div class="flex-auto center  mr1 p1 e-c-bg-base e-elevation1 e-border">
+                        <div class="bold caps">Mon</div>
+                        <div class="e-c-alt">3pm</div>
+                        <div class="e-c-alt">Stream</div>
+                        <div class="e-c-alt">Fortnite</div>
+                    </div>
+                    <div class="flex-auto center mr1 p1 e-c-bg-base e-elevation1 e-border">
+                        <div class="bold caps">Wed</div>
+                        <div class="e-c-alt">3pm</div>
+                        <div class="e-c-alt">Stream</div>
+                        <div class="e-c-alt">Fortnite</div>
+                    </div>
+                    <div class="flex-auto center mr1 p1 e-c-bg-base e-elevation1 e-border">
+                        <div class="bold caps">Sat</div>
+                        <div class="e-c-alt">3pm</div>
+                        <div class="e-c-alt">Rerun</div>
+                        <div class="e-c-alt">Fortnite</div>
+                    </div>
+                    <div class="flex-auto center p1 e-c-bg-base e-elevation1 e-border">
+                        <div class="bold caps">Sun</div>
+                        <div class="e-c-alt">3pm</div>
+                        <div class="e-c-alt">Stream</div>
+                        <div class="e-c-alt">Variety</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt3 pt1">
+                <div class="flex mb2 items-center">
+                    <div class="flex-auto">
+                        <div class="inline caps bold mr2">Upcoming Events</div>
+                        <div class="inline nowrap h6 e-c-alt-2">Pacific
+                            Daylight Time</div>
+                    </div>
+                    <div class="ml1">
+                        <button class="rounded e-button e-button--hollow e-button--small">
+                            <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                <path
+                                    d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                            <span>Button</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Start: Cards -->
+                <div>
+                    <!-- Start: One Card -->
+                    <div class="flex items-stretch my2">
+                        <div class="flex flex-column justify-start items-center pr1">
+                            <div class="border">
+                                <div class="nowrap h6 px1 py2 center line-height-1 caps bold e-c-bg-black e-c-white">
+                                    May 4
+                                </div>
+                                <div class="nowrap h6 line-height-1 center p1 e-c-bg-white e-c-black">4 PM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto flex-row e-c-bg-base e-border">
+                            <div class="flex flex-auto flex-column justify-center pl2 py1">
+                                <div class="bold">Fortnite World Cup</div>
+                                <div class="h6 e-c-alt">Online Opens, Week 4</div>
+                                <div class="h6 e-c-alt">Duos, Semi-finals</div>
+                            </div>
+                            <div class="self-start p2">
+                                <button class="rounded e-iconbutton">
+                                    <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: One Card -->
+                    <!-- Start: One Card -->
+                    <div class="flex items-stretch my2">
+                        <div class="flex flex-column justify-start items-center pr1">
+                            <div class="border">
+                                <div class="nowrap h6 px1 py2 center line-height-1 caps bold e-c-bg-black e-c-white">
+                                    May 5
+                                </div>
+                                <div class="nowrap h6 line-height-1 center p1 e-c-bg-white e-c-black">4 PM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto flex-row e-c-bg-base e-border">
+                            <div class="flex flex-auto flex-column justify-center pl2 py1">
+                                <div class="bold">Fortnite World Cup</div>
+                                <div class="h6 e-c-alt">Online Opens, Week 4</div>
+                                <div class="h6 e-c-alt">Duos, Semi-finals</div>
+                            </div>
+                            <div class="self-start p2">
+                                <button class="rounded e-iconbutton">
+                                    <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: One Card -->
+                    <!-- Start: One Card -->
+                    <div class="flex items-stretch my2">
+                        <div class="flex flex-column justify-start items-center pr1">
+                            <div class="border">
+                                <div class="nowrap h6 px1 py2 center line-height-1 caps bold e-c-bg-black e-c-white">
+                                    May 6
+                                </div>
+                                <div class="nowrap h6 line-height-1 center p1 e-c-bg-white e-c-black">4 PM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto flex-row e-c-bg-base e-border">
+                            <div class="flex flex-auto flex-column justify-center pl2 py1">
+                                <div class="bold">Fortnite World Cup</div>
+                                <div class="h6 e-c-alt">Online Opens, Week 4</div>
+                                <div class="h6 e-c-alt">Duos, Semi-finals</div>
+                            </div>
+                            <div class="self-start p2">
+                                <button class="rounded e-iconbutton">
+                                    <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: One Card -->
+                    <!-- Start: One Card -->
+                    <div class="flex items-stretch my2">
+                        <div class="flex flex-column justify-start items-center pr1">
+                            <div class="border">
+                                <div class="nowrap h6 px1 py2 center line-height-1 caps bold e-c-bg-black e-c-white">
+                                    May 11
+                                </div>
+                                <div class="nowrap h6 line-height-1 center p1 e-c-bg-white e-c-black">4 PM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto flex-row e-c-bg-base e-border">
+                            <div class="flex flex-auto flex-column justify-center pl2 py1">
+                                <div class="bold">Fortnite World Cup</div>
+                                <div class="h6 e-c-alt">Online Opens, Week 5</div>
+                                <div class="h6 e-c-alt">Solo, Semi-finals</div>
+                            </div>
+                            <div class="self-start p2">
+                                <button class="rounded e-iconbutton">
+                                    <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: One Card -->
+                    <!-- Start: One Card -->
+                    <div class="flex items-stretch my2">
+                        <div class="flex flex-column justify-start items-center pr1">
+                            <div class="border">
+                                <div class="nowrap h6 px1 py2 center line-height-1 caps bold e-c-bg-black e-c-white">
+                                    May 12
+                                </div>
+                                <div class="nowrap h6 line-height-1 center p1 e-c-bg-white e-c-black">4 PM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto flex-row e-c-bg-base e-border">
+                            <div class="flex flex-auto flex-column justify-center pl2 py1">
+                                <div class="bold">Fortnite World Cup</div>
+                                <div class="h6 e-c-alt">Online Opens, Week 5</div>
+                                <div class="h6 e-c-alt">Solo, Semi-finals</div>
+                            </div>
+                            <div class="self-start p2">
+                                <button class="rounded e-iconbutton">
+                                    <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                        <path
+                                            d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: One Card -->
+                    <!-- Start: One Card -->
+
+                </div>
+                <!-- End: Cards -->
+                <div class="my2 flex justify-center">
+                    <button class="rounded e-button e-button--text">
+                        <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                            <path
+                                d="M4.016 10.119c-.248-3.33 2.317-6.238 5.718-6.483a6.202 6.202 0 0 1 2.229.26l.474.144.543-1.55a.746.746 0 0 1 .656-.49.747.747 0 0 1 .715.408l1.572 3.14a.713.713 0 0 1-.176.867.762.762 0 0 1-.165.109l-3.21 1.538a.748.748 0 0 1-.819-.108.718.718 0 0 1-.212-.782l.426-1.216-.517-.145a4.029 4.029 0 0 0-1.366-.143C7.63 5.83 5.928 7.758 6.091 9.97a.98.98 0 0 1-.24.727c-.2.217-.443.338-.722.359l-.078.003c-.54 0-.994-.413-1.035-.941zm1.162 7.384l-1.14-3.317a.72.72 0 0 1 .468-.92l3.39-1.116a.789.789 0 0 1 .239-.037.75.75 0 0 1 .562.248c.198.224.24.54.106.804l-.665 1.306.586.167c.455.131.927.177 1.386.147a4.126 4.126 0 0 0 2.81-1.385 3.93 3.93 0 0 0 .987-2.917c-.02-.27.069-.534.25-.74.183-.206.434-.33.712-.348.28-.022.539.067.753.247.213.18.34.425.362.694a5.934 5.934 0 0 1-1.491 4.396 6.197 6.197 0 0 1-4.231 2.084 6.097 6.097 0 0 1-2.604-.386l-.432-.163-.676 1.328a.724.724 0 0 1-.172.22.756.756 0 0 1-.545.182.739.739 0 0 1-.655-.494z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <span>Show More</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

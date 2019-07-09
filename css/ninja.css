@@ -1,0 +1,122 @@
+@import url("shared/basscss.css");
+/* Basscss | http://basscss.com | MIT License */
+
+@import url("shared/styles.css");
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+* {
+    font-family: sans-serif;
+}
+
+.bold {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    font-weight: normal;
+}
+
+html {
+    background: transparent;
+}
+
+/* Start: colors */
+
+:root, .e-channel-theme {
+    --c-brand: #002c9b;
+    /* A channel brand color, usually dark */
+    --c-brand-alt: #0040b2;
+    /* A secondary brand color, usually slightly brighter */
+    --c-accent: #f7d014;
+    /* A channel accent color, usually bright */
+    --c-background-body: var(--c-brand);
+    --c-background-base: var(--c-brand-alt);
+    --c-background-backdrop: hsla(0, 0, 0, .6);
+    --c-text-base: rgba(255, 255, 255, .9);
+    --c-text-alt: rgba(255, 255, 255, .6);
+    --c-text-alt-2: rgba(255, 255, 255, .5);
+    --c-border: rgba(255, 255, 255, 0.1);
+    --c-live: #e91916;
+    --c-alert: #e91916;
+    --c-success: #14b866;
+    --c-white: #fff;
+    --c-black: #000;
+}
+
+body {
+    color: var(--c-text-base);
+    fill: var(--c-text-base);
+}
+
+.e-backdrop {
+    background-color: var(--c-background-backdrop);
+}
+
+a {
+    color: var(--c-accent);
+    fill: var(--c-accent);
+}
+
+a:active {
+    opacity: .8;
+}
+
+.e-c-bg-white {
+    background-color: var(--c-white) !important;
+}
+
+.e-c-white {
+    color: var(--c-white) !important;
+    fill: var(--c-white) !important;
+}
+
+.e-c-bg-black {
+    background-color: var(--c-black) !important;
+}
+
+.e-c-black {
+    color: var(--c-black) !important;
+    fill: var(--c-black) !important;
+}
+
+.e-c-bg-base {
+    background-color: var(--c-background-base) !important;
+}
+
+.e-c-bg-body {
+    background-color: var(--c-background-body) !important;
+}
+
+.e-c-bg-alt {
+    background-color: var(--c-background-alt) !important;
+}
+
+.e-c-bg-alt-2 {
+    background-color: var(--c-background-alt-2) !important;
+}
+
+.e-c-bg-accent {
+    background-color: var(--c-accent) !important;
+}
+
+.e-c-bg-success {
+    background-color: var(--c-success) !important;
+}
+
+.e-c-accent {
+    color: var(--c-accent) !important;
+    fill: var(--c-accent) !important;
+}
+
+.e-c-base {
+    color: var(--c-text-base) !important;
+    fill: var(--c-text-base) !important;
+}
+
+.e-c-alt {
+    color: var(--c-text-alt) !important;
+    fill: var(--c-text-alt) !important;
+}
+
+.e-c-alt-2 {
+    color: var(--c-text-alt-2) !important;
+    fill: var(--c-text-alt-2) !important;
+}
