@@ -53,37 +53,40 @@
             artistic
             freedom. </div>
         <div class="h3 h3 my2">Tier 1: layout the responsive screens using BassCSS</div>
-        <ul>
-            <li>After sketching out the wireframes and user flow on paper, I use <a target="_blank"
+        <ul class="my2">
+            <li class="my1">After sketching out the wireframes and user flow on paper, I use <a target="_blank"
                     href="https://github.com/basscss/basscss">BassCSS</a> (MIT
                 License) to build the fluid and
                 responsive html pages.</li>
-            <li>Benefits:
-                <ul>
-                    <li>The file size of BassCSS is only 14kb. Its utility CSS classes are very
+            <li class="my1">Benefits:
+                <ul class="my2">
+                    <li class="my1">The file size of BassCSS is only 14kb. Its utility CSS classes are very
                         comprehensive. It's
                         possible to build
                         fluid layout without writing any
                         additional CSS, thus the html
                         pages become
                         very reusable.</li>
-                    <li>BassCss has <a target="_blank" href="https://basscss.com/">documentation and code snippets.</a>
+                    <li class="my1">BassCss has <a target="_blank" href="https://basscss.com/">documentation and code
+                            snippets.</a>
                     </li>
-                    <li>Separating the layout CSS from the style CSS makes the layout less prone to breaking and much
+                    <li class="my1">Separating the layout CSS from the style CSS makes the layout less prone to breaking
+                        and much
                         easier
                         to
                         maintain.</li>
-                    <li>With the functional class names, the CSS becomes very readable.</li>
-                    <li>It's much easier to create professional-looking UI with good
+                    <li class="my1">With the functional class names, the CSS becomes very readable.</li>
+                    <li class="my1">It's much easier to create professional-looking UI with good
                         alignment, padding, margin, etc. with something like BassCSS or other CSS frameworks than
                         building
                         everything from scratch.</li>
                 </ul>
             </li>
-            <li>UI examples with fluid layout using only <a target="_blank" href="css/shared/basscss.css">BassCSS</a>
+            <li class="my1">UI examples with fluid layout using only <a target="_blank"
+                    href="css/shared/basscss.css">BassCSS</a>
                 as defined as Tier 1
                 CSS in this repository:
-                <div>
+                <div class="my2">
                     <div class="t-frame">
                         <iframe src="html-examples/tier1.htm"></iframe>
                         <div class="h6">
@@ -123,22 +126,25 @@
         </ul>
 
         <div class="h3 h3 my2">Tier 2: reusable CSS for generic styling</div>
-        <ul>
-            <li>The goal of this step of the workflow is to create a set of styling CSS that is reusable for future
+        <ul class="my2">
+            <li class="my1">The goal of this step of the workflow is to create a set of styling CSS that is reusable for
+                future
                 Twitch
                 extension
                 projects.</li>
-            <li>This is the set of CSS that will become the "style guide" and needs time to be built out and tested
+            <li class="my1">This is the set of CSS that will become the "style guide" and needs time to be built out and
+                tested
                 cross browsers, so
                 together
                 with BassCSS it can be shared with the community as boilerplates.</li>
-            <li>The examples below add prefix "e-" to the class names of this Tier 2 CSS to differentiate from the
+            <li class="my1">The examples below add prefix "e-" to the class names of this Tier 2 CSS to differentiate
+                from the
                 BassCSS
                 class names</li>
-            <li>Examples of styled UI using only <a target="_blank" href="css/shared/basscss.css">Tier
+            <li class="my1">Examples of styled UI using only <a target="_blank" href="css/shared/basscss.css">Tier
                     1</a>
                 and <a target="_blank" href="css/shared/styles.css">Tier 2</a> CSS (shown in light mode):
-                <div>
+                <div class="my2">
                     <div class="t-frame">
                         <iframe src="html-examples/tier1&2-light.htm"></iframe>
                         <div class="h6">
@@ -162,6 +168,7 @@
                                 its
                                 own
                                 window</a>
+                            <div>Reload to see the slide-in transition</div>
                         </div>
                     </div>
                     <div class="t-frame">
@@ -190,8 +197,8 @@
                     </div>
                 </div>
             </li>
-            <li>Same examples but in dark mode:
-                <div>
+            <li class="my1">Same examples but in dark mode:
+                <div class="my2">
                     <div class="t-frame">
                         <iframe src="html-examples/tier1&2-dark.htm"></iframe>
                         <div class="h6">
@@ -215,6 +222,7 @@
                                 its
                                 own
                                 window</a>
+                            <div>Reload to see the slide-in transition</div>
                         </div>
                     </div>
                     <div class="t-frame">
@@ -243,7 +251,8 @@
                     </div>
                 </div>
             </li>
-            <li>Other examples using only Tier 1 and Tier 2 CSS but allowing some channel-specific customization:
+            <li class="my1">Other examples using only Tier 1 and Tier 2 CSS but allowing some channel-specific
+                customization:
                 drlupo's channel theme (red and
                 purple, see the <a target="_blank" href="css/drlupo.css">CSS for DrLupo's colors</a>), Ninja's (blue and
                 yellow, see
@@ -255,7 +264,7 @@
                 header images here are from their channel page panels. Many creators on Twitch today upload their own
                 branded
                 header images for the panels.
-                <div>
+                <div class="my2">
                     <div class="t-frame">
                         <iframe src="html-examples/tier1&2-drlupo.htm"></iframe>
                         <div class="h6">
@@ -279,16 +288,18 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="my1">
                 The examples above assume that creator can customize:
-                <ul>
-                    <li>a dark brand color (used for background)</li>
-                    <li>a tone slightly lighter than the brand color (used for the alternative background color)</li>
-                    <li>a bright accent color</li>
-                    <li>a Google font, letter spacing, font style (applied to .bold in the examples)</li>
-                    <li>having .rounded or not</li>
-                    <li>the opacity of color variables: --c-text, --c-text-alt and --c-text-alt-2</li>
-                    <li>There should be some kind of auto detect feature: if the accent color is dark enough, the text
+                <ul class="my2">
+                    <li class="my1">a dark brand color (used for background)</li>
+                    <li class="my1">a tone slightly lighter than the brand color (used for the alternative background
+                        color)</li>
+                    <li class="my1">a bright accent color</li>
+                    <li class="my1">a Google font, letter spacing, font style (applied to .bold in the examples)</li>
+                    <li class="my1">having .rounded or not</li>
+                    <li class="my1">the opacity of color variables: --c-text, --c-text-alt and --c-text-alt-2</li>
+                    <li class="my1">There should be some kind of auto detect feature: if the accent color is dark
+                        enough, the text
                         of the Button and the Tabs will use
                         .e-c-white; if not, .e-c-black
                     </li>
@@ -296,16 +307,17 @@
             </li>
         </ul>
         <div class="h3 h3 my2">Tier 3: game theme example</div>
-        <ul>
-            <li>This tier of the styling CSS is the least reusable. It either overwrites or replaces classes defined in
+        <ul class="my2">
+            <li class="my1">This tier of the styling CSS is the least reusable. It either overwrites or replaces classes
+                defined in
                 Tier 2.</li>
-            <li>Class names can be semantic or utility</li>
-            <li>For this example, I'm using prefix "fortnite-" for the class names.</li>
-            <li>UI examples of a dummy project Fortnight World Cup Event using <a target="_blank"
+            <li class="my1">Class names can be semantic or utility</li>
+            <li class="my1">For this example, I'm using prefix "fortnite-" for the class names.</li>
+            <li class="my1">UI examples of a dummy project Fortnight World Cup Event using <a target="_blank"
                     href="css/shared/basscss.css">Tier
                     1</a>, <a target="_blank" href="css/shared/styles.css">Tier 2</a> and <a target="_blank"
                     href="css/fortnite.css">Tier 3</a> CSS:
-                <div>
+                <div class="my2">
                     <div class="t-frame">
                         <iframe src="html-examples/tier1&2&3-fortnite.htm"></iframe>
                         <div class="h6">
