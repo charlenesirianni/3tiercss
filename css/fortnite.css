@@ -8,24 +8,18 @@
     vertical-align: baseline;
 }
 
-html {
-    background-image: url(./fortnite/background.jpg);
-    background-size: 130% 100%;
-}
-
 /* Start: colors */
 
 :root {
     --c-brand: rgb(29, 184, 243);
     --c-accent: rgb(126, 0, 255);
     /* A channel accent color, usually bright */
-    --c-background-body: hsl(220, 7%, 98%);
     --c-background-base: #fff;
     --c-background-accent: var(--c-accent);
     --c-text-base: hsl(220, 0%, 10%);
     --c-text-alt: hsl(220, 0%, 20%);
     --c-text-alt-2: hsl(220, 0%, 44%);
-    --c-border: rgba(29, 184, 243, 1);
+    --c-border: rgba(255, 255, 255, 0.15);
     --c-live: #e91916;
     --c-alert: #e91916;
     --c-success: #14b866;
@@ -39,7 +33,7 @@ body {
 }
 
 .e-backdrop {
-    background: linear-gradient(to bottom, rgba(81, 193, 255, .85) 1%, rgba(130, 68, 253, .95) 100%);
+    background: linear-gradient(to bottom, rgba(81, 193, 255, .8) 1%, rgba(130, 68, 253, .9) 100%);
 }
 
 a {
@@ -74,7 +68,7 @@ a:active {
 }
 
 .e-c-bg-body {
-    background-color: var(--c-background-body) !important;
+    background: #fff linear-gradient(to bottom, rgba(81, 193, 255, .85) 1%, rgba(130, 68, 253, .95) 100%);
 }
 
 .e-c-bg-alt {

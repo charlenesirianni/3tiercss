@@ -246,6 +246,6 @@ input:checked+.e-switch__slider:before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--c-border);
+    background: rgba(255, 255, 255, .25);
     border-radius: .5rem;
 }
