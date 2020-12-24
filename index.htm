@@ -2,344 +2,270 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link href="css/shared/basscss.css" rel="stylesheet">
-    <!-- Basscss | http://basscss.com | MIT License -->
-    <style>
-        * {
-            font-family: sans-serif;
-        }
-
-        .t-frame {
-            display: inline-block;
-            margin: 10px;
-            vertical-align: top;
-        }
-
-        .t-frame iframe {
-            display: inline-block;
-            width: 320px;
-            border: 1px solid #E6E2D9;
-            height: 470px;
-            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .1), 0 2px 2px -2px rgba(0, 0, 0, .02), 0 1px 4px 0 rgba(0, 0, 0, .04)
-        }
-
-        /* .t-frame--small iframe {
-            width: 240px;
-        } */
-
-        /* .t-frame--large iframe {
-            width: 600px;
-        } */
-
-        .t-center {
-            width: 110rem;
-            margin: auto;
-        }
-    </style>
+        <meta charset="utf-8">
+        <title>Documentation</title>
+        <link href="./src/css/default-theme/video_overlay.css" rel="stylesheet">
 </head>
 
+<body class="fullheight">
+        <div class="p4 m0 h4 line-height-4 t-center"><a href="" class="h1 bold text-decoration-none c-base">CSS
+                        Documentation</a>
+                <div class="mb3">Refer to <a target="_blank" href="https://basscss.com/">BassCSS</a> documentation for
+                        layout-related
+                        class names, like flexbox, grid, margin, padding, etc. Also see layout examples (coming soon)
+                        for Twitch video extensions and panel extensions.</div>
+                <nav class="pl2 my4 border-left">
+                        <div class="mxn2 flex flex-wrap">
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#dark-mode"
+                                                class="h6 caps bold py1 text-decoration-none ">Dark Mode</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#colors"
+                                                class="h6 caps bold py1 text-decoration-none ">Colors</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#type-scale"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Type
+                                                Scale (Coming soon)</a></div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#typography"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Typefaces
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#typography"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Popover
+                                                Menu
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Button
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Elevation
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Opacity
+                                                (Coming soon)</a>
+                                </div>
 
-<body class="fullheight p4 m0 h4 line-height-4">
-    <div class="t-center">
-        <div class="h2">A 3-tiered design-in-browser workflow for Twitch extensions</div>
-        <div class="mb4">This is a POC project to demonstrate my 3-step design-in-browser workflow as well as a tiered
-            CSS
-            approach
-            that aims
-            to be reusable
-            while allowing
-            artistic
-            freedom. </div>
-        <div class="h3 h3 my2">Tier 1: layout the responsive screens using BassCSS</div>
-        <ul class="my2">
-            <li class="my1">After sketching out the wireframes and user flow on paper, I use <a target="_blank"
-                    href="https://github.com/basscss/basscss">BassCSS</a> (MIT
-                License) to build the fluid and
-                responsive html pages.</li>
-            <li class="my1">Benefits:
-                <ul class="my2">
-                    <li class="my1">The file size of BassCSS is only 14kb. Its utility CSS classes are very
-                        comprehensive. It's
-                        possible to build
-                        fluid layout without writing any
-                        additional CSS, thus the html
-                        pages become
-                        very reusable.</li>
-                    <li class="my1">BassCss has <a target="_blank" href="https://basscss.com/">documentation and code
-                            snippets.</a>
-                    </li>
-                    <li class="my1">Separating the layout CSS from the style CSS makes the layout less prone to breaking
-                        and much
-                        easier
-                        to
-                        maintain.</li>
-                    <li class="my1">With the functional class names, the CSS becomes very readable.</li>
-                    <li class="my1">It's much easier to create professional-looking UI with good
-                        alignment, padding, margin, etc. with something like BassCSS or other CSS frameworks than
-                        building
-                        everything from scratch.</li>
-                </ul>
-            </li>
-            <li class="my1">UI examples with fluid layout using only <a target="_blank"
-                    href="css/shared/basscss.css">BassCSS</a>
-                as defined as Tier 1
-                CSS in this repository:
-                <div class="my2">
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1.htm" target="_new">Open in its own window</a>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1_full-screen_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1_full-screen_dialog.htm" target="_new">Open in its own
-                                window</a>
+                </nav>
+                <section id="dark-mode" class="my4 py2">
+                        <a href="#dark-mode" class="my2 bold h3 text-decoration-none c-base">Dark Mode</a>
+                        <div class="my2">
+                                The default colors are designed for light mode. Use <span
+                                        class="border rounded px1"><code>mode-dark</code></span> to switch dark-mode
+                                colors.</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="mode-light"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1_full-screen_dialog_details.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1_full-screen_dialog_details.htm" target="_new">Open in its own
-                                window</a>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="mode-dark"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1_confirmation_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1_confirmation_dialog.htm" target="_new">Open in its own
-                                window</a>
+                </section>
+                <section id="colors" class="my4 py2">
+                        <a href="#colors" class="my2 bold h3 text-decoration-none c-base">Colors</a>
+                        <div class="my2">
+                                Color variables for both light and dark modes are part of the <a target="_blank"
+                                        href="../sass/2_extension_theme">2nd tier</a> of this
+                                framework. Below are
+                                examples of colors for a purple theme defined in
+                                <a target="_blank"
+                                        href="../sass/2_extension_theme/_default_theme.scss">_default_theme.scss</a>.
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1_notif.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1_notif.htm" target="_new">Open in its own
-                                window</a>
+                        <div class="mt4 h4 bold c-base">Background Colors in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-base"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-alt"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-accent"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-warn"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-success"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-white"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-black"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 backdrop"></div>
+                                </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-base"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-alt"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-accent"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-warn"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-success"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-white"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-black"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 backdrop"></div>
+                                </div>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-base"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-alt"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-accent"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-warn"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-success"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-white"&gt;&lt;/div&gt; //Not affected by the light/dark mode</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-black"&gt;&lt;/div&gt; //Not affected by the light/dark mode</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="backdrop"&gt;&lt;/div&gt; //Translucent background color for the backdrop of modal windows</code>
+                        </div>
 
-        <div class="h3 h3 my2">Tier 2: reusable CSS for generic styling</div>
-        <ul class="my2">
-            <li class="my1">The goal of this step of the workflow is to create a set of styling CSS that is reusable for
-                future
-                Twitch
-                extension
-                projects.</li>
-            <li class="my1">This is the set of CSS that will become the "style guide" and needs time to be built out and
-                tested
-                cross browsers, so
-                together
-                with BassCSS it can be shared with the community as boilerplates.</li>
-            <li class="my1">The examples below add prefix "e-" to the class names of this Tier 2 CSS to differentiate
-                from the
-                BassCSS
-                class names</li>
-            <li class="my1">Examples of styled UI using only <a target="_blank" href="css/shared/basscss.css">Tier
-                    1</a>
-                and <a target="_blank" href="css/shared/styles.css">Tier 2</a> CSS (shown in light mode):
-                <div class="my2">
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-light.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-light.htm" target="_new">Open in its own
-                                window</a>
+                        <div class="mt4 h4 bold c-base">Text and Fill Colors in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="m1 px2 py1 c-base"><span class="bold">.c-base</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-alt"><span class="bold">.c-alt</span> text and fill color</div>
+                                <div class="m1 px2 py1 c-alt-2"><span class="bold">.c-alt-2</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-accent"><span class="bold">.c-accent</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-warn"><span class="bold">.c-warn</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-white backdrop"><span class="bold">.c-white</span> text and
+                                        fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1 c-black"><span class="bold">.c-black</span> text and fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1"><a href="#">Default anchor color</a>
+                                </div>
+                                <div class="m1 px2 py1"><a class="c-warn" href="#">Anchor color overwritten with
+                                                .c-warn</a>
+                                </div>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-light_full-screen_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-light_full-screen_dialog.htm" target="_new">Open in its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-in transition</div>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="m1 px2 py1 c-base"><span class="bold">.c-base</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-alt"><span class="bold">.c-alt</span> text and fill color</div>
+                                <div class="m1 px2 py1 c-alt-2"><span class="bold">.c-alt-2</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-accent"><span class="bold">.c-accent</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-warn"><span class="bold">.c-warn</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-white"><span class="bold">.c-white</span> text and fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1 c-black c-bg-white"><span class="bold">.c-black</span> text and
+                                        fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1"><a href="#">Default anchor color</a>
+                                </div>
+                                <div class="m1 px2 py1"><a class="c-warn" href="#">Anchor color overwritten with
+                                                .c-warn</a>
+                                </div>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-light_full-screen_dialog_details.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-light_full-screen_dialog_details.htm" target="_new">Open in
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-in transition</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-base"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-light_confirmation_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-light_confirmation_dialog.htm" target="_new">Open in
-                                a
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the pop-up transition
-                            </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-alt"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-light_notif.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-light_notif.htm" target="_new">Open in
-                                a
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-up transition
-                            </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-alt-2"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li class="my1">Same examples but in dark mode:
-                <div class="my2">
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-dark.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-dark.htm" target="_new">Open in its own
-                                window</a>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-accent"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-dark_full-screen_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-dark_full-screen_dialog.htm" target="_new">Open in its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-in transition</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-warn"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-dark_full-screen_dialog_details.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-dark_full-screen_dialog_details.htm" target="_new">Open in
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-in transition</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-white"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-dark_confirmation_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-dark_confirmation_dialog.htm" target="_new">Open in
-                                a
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the pop-up transition
-                            </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-black"&gt;&lt;/div&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-dark_notif.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-dark_notif.htm" target="_new">Open in
-                                a
-                                its
-                                own
-                                window</a>
-                            <div>Reload to see the slide-up transition
-                            </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;a&gt;&lt;/a&gt;</code>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li class="my1">Other examples using only Tier 1 and Tier 2 CSS but allowing some channel-specific
-                customization:
-                drlupo's channel theme (red and
-                purple, see the <a target="_blank" href="css/drlupo.css">CSS for DrLupo's colors</a>), Ninja's (blue and
-                yellow, see
-                the <a target="_blank" href="css/ninja.css">CSS for Ninja's
-                    colors</a>), and
-                professorbroman's (green and dark green, see the <a target="_blank" href="css/professorbroman.css">CSS
-                    for ProfessorBroman's
-                    colors</a>). The
-                header images here are from their channel page panels. Many creators on Twitch today upload their own
-                branded
-                header images for the panels.
-                <div class="my2">
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-drlupo.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-drlupo.htm" target="_new">Open in its own
-                                window</a>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;a class="c-warn"&gt;&lt;/a&gt;</code>
                         </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-ninja.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-ninja.htm" target="_new">Open in its own
-                                window</a>
-                        </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2-professorbroman.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2-professorbroman.htm" target="_new">Open in its own
-                                window</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="my1">
-                The examples above assume that creator can customize:
-                <ul class="my2">
-                    <li class="my1">a dark brand color (used for background)</li>
-                    <li class="my1">a tone slightly lighter than the brand color (used for the alternative background
-                        color)</li>
-                    <li class="my1">a bright accent color</li>
-                    <li class="my1">a Google font, letter spacing, font style (applied to .bold in the examples)</li>
-                    <li class="my1">having .rounded or not</li>
-                    <li class="my1">the opacity of color variables: --c-text, --c-text-alt and --c-text-alt-2</li>
-                    <li class="my1">There should be some kind of auto detect feature: if the accent color is dark
-                        enough, the text
-                        of the Button and the Tabs will use
-                        .e-c-white; if not, .e-c-black
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="h3 h3 my2">Tier 3: game theme example</div>
-        <ul class="my2">
-            <li class="my1">This tier of the styling CSS is the least reusable. It either overwrites or replaces classes
-                defined in
-                Tier 2.</li>
-            <li class="my1">Class names can be semantic or utility</li>
-            <li class="my1">For this example, I'm using prefix "fortnite-" for the class names.</li>
-            <li class="my1">UI examples of a dummy project Fortnight World Cup Event using <a target="_blank"
-                    href="css/shared/basscss.css">Tier
-                    1</a>, <a target="_blank" href="css/shared/styles.css">Tier 2</a> and <a target="_blank"
-                    href="css/fortnite.css">Tier 3</a> CSS:
-                <div class="my2">
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2&3-fortnite.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2&3-fortnite.htm" target="_new">Open in its own
-                                window</a>
-                        </div>
-                    </div>
-                    <div class="t-frame">
-                        <iframe src="html-examples/tier1&2&3-fortnite_confirmation_dialog.htm"></iframe>
-                        <div class="h6">
-                            <a href="html-examples/tier1&2&3-fortnite_confirmation_dialog.htm" target="_new">Open in
-                                its own
-                                window</a>
-                            <div>Reload to see the pop-up transition
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <div class="mt4 h4 bold c-base">Border Color in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="mx2 my3 px2 py1 c-base rounded border">Inherit border color
+                                </div>
+                                <div class="mx2 my3 px2 py1 c-base rounded border c-border"><span
+                                                class="bold">c-border</span> border color
+                                </div>
+                        </div>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="mx2 my3 px2 py1 c-base rounded border">Inherit border color
+                                </div>
+                                <div class="mx2 my3 px2 py1 c-base rounded border c-border"><span
+                                                class="bold">c-border</span> border color
+                                </div>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="border"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="border c-border&gt;&lt;/div&gt;</code>
+                        </div>
+                </section>
+                <!-- <section id="xxxxx" class="my4">
+                        <a href="#xxxxx" class="my2 bold h4 text-decoration-none c-base">Xxxxx</a>
+                        <div class="my2">
+                                ___<span class="border rounded px1"><code>XXX</code></span></div>
+                        <div class="my2 p2 rounded border c-border ">Example</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="xxxxx"&gt;&lt;/div&gt;</code>
+                        </div>
+                </section> -->
+        </div>
 </body>
 
 </html>

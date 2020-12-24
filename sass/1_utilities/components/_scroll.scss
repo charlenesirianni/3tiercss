@@ -1,0 +1,17 @@
+/* Scrollbar: width */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Scrollbar: Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(190, 190, 190, 0.25);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}

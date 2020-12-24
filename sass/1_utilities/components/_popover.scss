@@ -1,0 +1,94 @@
+/* Start: Popover */
+
+.popover {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.popover .popover-margin {
+    visibility: hidden;
+    opacity: 0;
+    width: 24rem;
+    color: var(--c-text);
+    position: absolute;
+    z-index: 1;
+}
+
+.popover--right .popover-margin {
+    left: 100%;
+}
+
+.popover--left .popover-margin {
+    right: 100%;
+}
+
+.popover--below .popover-margin {
+    top: 100%;
+}
+
+.popover--below.popover--right .popover-margin {
+    left: 0;
+}
+
+.popover--below.popover--left .popover-margin {
+    right: 0;
+}
+
+.popover--above.popover--right .popover-margin {
+    left: 0;
+}
+
+.popover--above.popover--left .popover-margin {
+    right: 0;
+}
+
+.popover--above .popover-margin {
+    bottom: 100%;
+}
+
+.popover--down .popover-margin {
+    top: 0;
+}
+
+.popover--up .popover-margin {
+    bottom: 0;
+}
+
+.popover--below.popover--up .popover-margin {
+    top: inherit;
+    bottom: 100%;
+}
+
+.popover--above.popover--up .popover-margin {
+    top: inherit;
+    bottom: 100%;
+}
+
+.popover--below.popover--down .popover-margin {
+    top: 100%;
+}
+
+.popover--above.popover--down .popover-margin {
+    top: 100%;
+}
+
+.popover-content {
+    background-color: var(--c-background-alt);
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .5), 0 2px 2px -2px rgba(0, 0, 0, .1), 0 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.popover-content-padding {
+    padding: 1.2rem 1.5rem;
+}
+
+.popover:hover {
+    filter: brightness(1.3);
+    z-index: 100;
+}
+
+.popover:hover .popover-margin {
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}

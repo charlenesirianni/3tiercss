@@ -1,0 +1,185 @@
+// CSS for creating mygame theme
+// Use CSS variables if they need to be overwritten at run time by streamer's own brand colors, otherwise, SCSS avariables would work
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+
+// Color variable names applicable to all themes
+
+:root {
+    --c-brand: #00FAFA;
+    --c-brand-alt: #1EBBFF;
+    --c-accent: var(--c-brand);
+    --c-link: var(--c-accent);
+    --c-warn: #e91916;
+    --c-success: green;
+    --c-white: rgb(255, 255, 255);
+    --c-white-opacity1: rgba(255, 255, 255, .1);
+    --c-black: rgb(0, 0, 0);
+    --c-black-opacity5: rgba(0, 0, 0, .5);
+    --c-background: #000000;
+    --c-background-base: #18181b;
+    --c-background-alt: #1f1f23;
+    --c-background-alt-2: #26262c;
+    --c-background-accent: var(--c-brand);
+    --c-background-backdrop: rgba(0,0,0, 0.8);
+    --c-border: rgba(255,255,255,0.15);
+    --c-text: #EFEFF1;
+    --c-text-alt: #DEDEE3;
+    --c-text-alt-2: #ADADB8;
+}
+
+// Color variable names only applicable to mygame theme
+    
+// $--c-mygame-cyan: #00FAFA;
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    vertical-align: baseline;
+}
+
+body {
+    color: var(--c-text);
+    fill: var(--c-text);
+}
+
+a {
+    color: var(--c-link);
+    fill: var(--c-link);
+}
+
+a:hover {
+    filter: brightness(1.1);
+}
+
+a:active {
+    opacity: .8;
+}
+
+.c-bg-white {
+    background-color: var(--c-white) !important;
+}
+
+.c-white {
+    color: var(--c-white) !important;
+    fill: var(--c-white) !important;
+}
+
+.c-bg-white-opacity1 {
+    background-color: var(--c-white-opacity1) !important;
+}
+
+.c-bg-black {
+    background-color: var(--c-black) !important;
+}
+
+.c-bg-black-opacity5 {
+    background-color: var(--c-black-opacity5) !important;
+}
+
+.c-black {
+    color: var(--c-black) !important;
+    fill: var(--c-black) !important;
+}
+
+.c-bg {
+    background-color: var(--c-background) !important;
+}
+
+.c-bg-base {
+    background-color: var(--c-background-base) !important;
+}
+
+.c-bg-alt {
+    background-color: var(--c-background-alt) !important;
+}
+
+.c-bg-alt-opacity75 {
+    background-color: var(--c-background-alt-opacity75) !important;
+}
+
+.c-bg-alt-2 {
+    background-color: var(--c-background-alt-2) !important;
+}
+
+.c-background-accent {
+    background-color: var(c-background-accent) !important;
+}
+
+.c-base {
+    color: var(--c-text) !important;
+    fill: var(--c-text) !important;
+}
+
+.c-alt {
+    color: var(--c-text-alt) !important;
+    fill: var(--c-text-alt) !important;
+}
+
+.c-alt-2 {
+    color: var(--c-text-alt-2) !important;
+    fill: var(--c-text-alt-2) !important;
+}
+
+.c-bg-brand {
+    background-color: var(--c-brand) !important;
+}
+
+.c-brand {
+    color: var(--c-brand) !important;
+    fill: var(--c-brand) !important;
+}
+
+.c-warn {
+    color: var(--c-warn) !important;
+    fill: var(--c-warn) !important;
+}
+
+.c-bg-warn {
+    background-color: var(--c-warn) !important;
+}
+
+.c-success {
+    color: var(--c-success) !important;
+    fill: var(--c-success) !important;
+}
+
+.c-bg-success {
+    background-color: var(--c-success) !important;
+}
+
+.c-border {
+    border-color: var(--c-border);
+}
+
+.c-border-brand {
+    border-color: var(--c-brand);
+}
+
+.backdrop {
+    background-color: var(--c-background-backdrop);
+}
+.mygame-notched {
+    clip-path: 
+    polygon(
+        0% 0%, 
+        calc(100% - 1rem) 0%, 
+        100% 1rem, 
+        100% 100%, 
+        0% 100%);
+    
+}
+.mygame-notched-inside {
+    clip-path: polygon(
+        0% 0%, 
+        calc(100% - 1rem) 0%, 
+        100% 1rem, 
+        100% 100%, 
+        6rem 100%, 
+        5rem calc(100% - .5rem), 
+        0 calc(100% - .5rem));
+}
+.mygame-c-bg-brand-gradient {
+    background: linear-gradient(to bottom, var(--c-brand) 0%, var(--c-brand-alt) 100%);
+}

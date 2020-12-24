@@ -1,0 +1,336 @@
+// Additional utility classes not defined in Basscss
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* Start: fixed dimension */
+
+.h20p {
+    height: 20% !important;
+    min-height: 20% !important;
+}
+
+.w20p {
+    width: 20% !important;
+    min-width: 20% !important;
+}
+
+.h50p {
+    height: 50% !important;
+    min-height: 50% !important;
+}
+
+.w50p {
+    width: 50% !important;
+    min-width: 50% !important;
+}
+
+.h60p {
+    width: 50% !important;
+    min-width: 50% !important;
+}
+
+.w60p {
+    width: 60% !important;
+    min-width: 60% !important;
+}
+
+.h1px {
+    height: 1px !important;
+}
+
+.w1px {
+    width: 1px !important;
+}
+
+.h2px {
+    height: 2px !important;
+}
+
+.w2px {
+    width: 2px !important;
+}
+
+.h4px {
+    height: 4px !important;
+    min-height: 4px !important;
+}
+
+.w4px {
+    width: 4px !important;
+    min-width: 4px !important;
+}
+
+.h12rem {
+    height: 1.2rem !important;
+}
+
+.w12rem {
+    width: 1.2rem !important;
+    min-width: 1.2rem !important;
+}
+
+.h16rem {
+    height: 1.6rem !important;
+}
+
+.w16rem {
+    width: 1.6rem !important;
+}
+
+.h20rem {
+    height: 2rem !important;
+}
+
+.w20rem {
+    width: 2rem !important;
+}
+
+.h24rem {
+    height: 2.4rem !important;
+    min-height: 2.4rem !important;
+}
+
+.w24rem {
+    width: 2.4rem !important;
+    min-width: 2.4rem !important;
+}
+
+.h28rem {
+    height: 2.8rem !important;
+}
+
+.w28rem {
+    width: 2.8rem !important;
+}
+
+.h32rem {
+    height: 3.2rem !important;
+}
+
+.w32rem {
+    width: 3.2rem !important;
+    min-width: 3.2rem !important;
+}
+
+.h40rem {
+    height: 4rem !important;
+    min-height: 4rem !important;
+}
+
+.w40rem {
+    width: 4rem !important;
+    min-width: 4rem !important;
+}
+
+.h48rem {
+    height: 4.8rem !important;
+    min-height: 4.8rem !important;
+}
+
+.w48rem {
+    width: 4.8rem !important;
+    min-width: 4.8rem !important;
+}
+
+.h64rem {
+    height: 6.4rem !important;
+}
+
+.w64rem {
+    width: 6.4rem !important;
+}
+
+.h80rem {
+    height: 8rem !important;
+}
+
+.w80rem {
+    width: 8rem !important;
+}
+
+.h110rem {
+    height: 11rem !important;
+}
+
+.w110rem {
+    width: 11rem !important;
+}
+
+.h120rem {
+    height: 12rem !important;
+}
+
+.w120rem {
+    width: 12rem !important;
+}
+
+.h160rem {
+    height: 16rem !important;
+}
+
+.w160rem {
+    width: 16rem !important;
+}
+
+.h320rem {
+    height: 32rem !important;
+}
+
+.w320rem {
+    width: 32rem !important;
+}
+
+.h400rem {
+    height: 40rem !important;
+}
+
+.w400rem {
+    width: 40rem !important;
+}
+
+.w600rem {
+    width: 60rem !important;
+}
+
+.m1px {
+    margin: 1px !important;
+}
+
+.mt1px {
+    margin-top: 1px !important;
+}
+
+.mb1px {
+    margin-bottom: 1px !important;
+}
+
+.mr1px {
+    margin-right: 1px !important;
+}
+
+.ml1px {
+    margin-left: 1px !important;
+}
+
+.m2px {
+    margin: 2px !important;
+}
+
+.mt2px {
+    margin-top: 2px !important;
+}
+
+.mb2px {
+    margin-bottom: 2px !important;
+}
+
+.my2px {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+.mr2px {
+    margin-right: 2px !important;
+}
+
+.ml2px {
+    margin-left: 2px !important;
+}
+
+.mx2px {
+    margin-right: 2px !important;
+    margin-left: 2px !important;
+}
+
+.p1px {
+    padding: 1px !important;
+}
+.py1px {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.px1px {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+.pt1px {
+    padding-top: 1px !important;
+}
+
+.pr1px {
+    padding-right: 1px !important;
+}
+
+.pb1px {
+    padding-bottom: 1px !important;
+}
+
+.pl1px {
+    padding-left: 1px !important;
+}
+
+.py2px {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.left-30rem {
+    left: 3rem !important;
+}
+
+.elevation1 {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .1), 0 2px 2px -2px rgba(0, 0, 0, .02), 0 1px 4px 0 rgba(0, 0, 0, .04)
+}
+
+.veil {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+.saturation0 {
+    filter: saturate(0);
+}
+
+/* Start: opacity */
+
+.opacity2 {
+    opacity: 0.2;
+}
+
+.opacity4 {
+    opacity: 0.4;
+}
+
+.opacity75 {
+    opacity: 0.75;
+}
+
+/* Start: cursors */
+
+.cursor--default {
+    cursor: default;
+}
+
+.cursor--pointer {
+    cursor: pointer;
+}
+
+.cursor--not-allowed {
+    cursor: not-allowed;
+}
+
+.cursor--move {
+    cursor: move;
+}
+

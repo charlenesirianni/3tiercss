@@ -1,0 +1,152 @@
+// Basic transition animation
+
+.ani-slide-left {
+    animation: .4s ease-out 0s 1 ani-slide-left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-slide-left {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.ani-slide-right {
+    animation: .4s ease-out 0s 1 ani-slide-right;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-slide-right {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.ani-slide-out-left {
+    animation: .4s ease-out 0s 1 ani-slide-out-left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-slide-out-left {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.ani-slide-up {
+    animation: .4s ease-out 0s 1 ani-slide-up;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-slide-up {
+    0% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.ani-pop-up {
+    animation: .25s ease-out 0s 1 ani-pop-up;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-pop-up {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.ani-shrink {
+    animation: .25s ease-out 0s 1 ani-shrink;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-shrink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+.ani-spin {
+    animation: ani-spin 3s infinite linear;
+}
+
+.ani-fade-in {
+    animation: .25s ease-out 0s 1 ani-fade-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ani-fade-out {
+    animation: .25s ease-out 0s 1 ani-fade-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ani-spin {
+    animation: ani-spin 3s infinite linear;
+}
+
+@keyframes ani-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.ani-pulse {
+    animation: ani-pulse 3s infinite ease-out;
+}
+
+@keyframes ani-pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}

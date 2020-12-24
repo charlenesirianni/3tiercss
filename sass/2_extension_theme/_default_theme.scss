@@ -1,0 +1,138 @@
+// Use CSS variables so they can be overwritten at run time by streamer's own brand colors
+
+:root,
+.mode-light {
+    --c-accent: #772ce8;
+    --c-link: var(--c-accent);
+    --c-warn: #e91916;
+    --c-success: #00e6cb;
+    --c-white: rgb(255, 255, 255);
+    --c-black: rgb(0, 0, 0);
+    --c-background: #f7f7f8;
+    --c-background-base: #ffffff;
+    --c-background-alt: #efeff1;
+    --c-background-alt-2: #e6e6ea;
+    --c-background-accent: #772ce8;
+    --c-background-backdrop: rgba(0, 0, 0, 0.6);
+    --c-border: rgba(0, 0, 0, 0.15);
+    --c-text: #0E0E10;
+    --c-text-alt: #1F1F23;
+    --c-text-alt-2: #53535F;
+}
+
+.mode-dark {
+    --c-link: #bf94ff;
+    --c-background: #000000;
+    --c-background-base: #18181b;
+    --c-background-alt: #1f1f23;
+    --c-background-alt-2: #26262c;
+    --c-background-backdrop: rgba(0, 0, 0, 0.8);
+    --c-border: rgba(255, 255, 255, 0.15);
+    --c-text: #EFEFF1;
+    --c-text-alt: #DEDEE3;
+    --c-text-alt-2: #ADADB8;
+}
+
+:root,
+.mode-light,
+.mode-dark,
+.theme-channel {
+    color: var(--c-text);
+    fill: var(--c-text);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+code {
+    font-family: monospace;
+}
+
+a {
+    color: var(--c-link);
+    fill: var(--c-link);
+}
+
+a:active {
+    opacity: .8;
+}
+
+.c-base {
+    color: var(--c-text) !important;
+    fill: var(--c-text) !important;
+}
+
+.c-alt {
+    color: var(--c-text-alt) !important;
+    fill: var(--c-text-alt) !important;
+}
+
+.c-alt-2 {
+    color: var(--c-text-alt-2) !important;
+    fill: var(--c-text-alt-2) !important;
+}
+
+.c-white {
+    color: var(--c-white) !important;
+    fill: var(--c-white) !important;
+}
+
+.c-bg-white {
+    background-color: var(--c-white) !important;
+}
+
+.c-black {
+    color: var(--c-black) !important;
+    fill: var(--c-black) !important;
+}
+
+.c-bg-black {
+    background-color: var(--c-black) !important;
+}
+
+.c-bg-warn {
+    background-color: var(--c-warn) !important;
+}
+
+.c-bg-success {
+    background-color: var(--c-success) !important;
+}
+
+.c-bg {
+    background-color: var(--c-background) !important;
+}
+
+.c-bg-base {
+    background-color: var(--c-background-base) !important;
+}
+
+.c-bg-alt {
+    background-color: var(--c-background-alt) !important;
+}
+
+.c-bg-alt-2 {
+    background-color: var(--c-background-alt-2) !important;
+}
+
+.c-bg-accent {
+    background-color: var(--c-background-accent) !important;
+}
+
+.c-accent {
+    color: var(--c-accent) !important;
+    fill: var(--c-accent) !important;
+}
+
+.c-warn {
+    color: var(--c-warn) !important;
+    fill: var(--c-warn) !important;
+}
+
+.c-border {
+    border-color: var(--c-border);
+}
+
+.backdrop {
+    background-color: var(--c-background-backdrop);
+}

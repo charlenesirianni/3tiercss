@@ -1,0 +1,109 @@
+.iconbutton {
+    vertical-align: middle;
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: 0;
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    fill: var(--c-link);
+}
+
+a.iconbutton {
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    vertical-align: middle;
+    border: 1px solid var(--c-accent);
+    background: var(--c-accent);
+    color: var(--c-white);
+    fill: var(--c-white);
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: 0 10px;
+    cursor: pointer;
+    line-height: 1em;
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+a.button {
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.button svg {
+    margin-right: .5rem;
+}
+
+.button--small {
+    min-width: 2.4rem;
+    min-height: 2.4rem;
+    padding: 0 7px;
+    font-size: 1.2rem;
+}
+
+.button:hover,
+.iconbutton:hover {
+    filter: brightness(1.1);
+}
+
+.button:focus,
+.iconbutton:focus {
+    box-shadow: 0 0 5px 0 var(--c-link);
+    outline-style: none;
+    outline-color: transparent;
+}
+
+.button svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .2rem;
+}
+
+.button--small svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.button * {
+    vertical-align: middle;
+}
+
+.button--hollow {
+    border: 1px solid var(--c-link);
+    background: none;
+    color: var(--c-link);
+    fill: var(--c-link);
+}
+
+.button--text {
+    background: none;
+    border-color: transparent;
+    color: var(--c-link);
+    fill: var(--c-link);
+}
+
+.iconbutton--small {
+    min-width: 2.4rem;
+    min-height: 2.4rem;
+}
+
+.iconbutton--small svg {
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+}
+
+.iconbutton svg,
+.icon svg {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}

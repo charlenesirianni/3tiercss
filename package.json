@@ -1,0 +1,28 @@
+{
+  "name": "3tiercss",
+  "version": "1.0.0",
+  "description": "3-tier CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "compile:sasssdefaultoverlay": "node-sass sass/3_extension_type/default_video_overlay.scss src/css/default-theme/video_overlay.css",
+    "compile:sasslolconfig": "node-sass sass/3_extension_type/lol_config.scss src/css/game-theme/lol/config.css",
+    "compile:sasslolmobile": "node-sass sass/3_extension_type/lol_mobile.scss src/css/game-theme/lol/mobile.css",
+    "compile:sassloloverlay": "node-sass sass/3_extension_type/lol_video_overlay.scss src/css/game-theme/lol/video_overlay.css",
+    "compile:sassmygameoverlay": "node-sass sass/3_extension_type/mygame_video_overlay.scss src/css/game-theme/mygame/video_overlay.css",
+    "compile:sassmygamemobile": "node-sass sass/3_extension_type/mygame_mobile.scss src/css/game-theme/mygame/mobile.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlenesirianni/3tiercss.git"
+  },
+  "author": "Charlene Sirianni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlenesirianni/3tiercss/issues"
+  },
+  "homepage": "https://github.com/charlenesirianni/3tiercss#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

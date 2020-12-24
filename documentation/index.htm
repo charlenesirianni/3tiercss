@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <title>Documentation</title>
+        <link href="../src/css/default-theme/video_overlay.css" rel="stylesheet">
+</head>
+
+<body class="fullheight">
+        <div class="p4 m0 h4 line-height-4 t-center"><a href="" class="h1 bold text-decoration-none c-base">CSS
+                        Documentation</a>
+                <div class="mb3">Refer to <a target="_blank" href="https://basscss.com/">BassCSS</a> documentation for
+                        layout-related
+                        class names, like flexbox, grid, margin, padding, etc. Also see layout examples (coming soon)
+                        for Twitch video extensions and panel extensions.</div>
+                <nav class="pl2 my4 border-left">
+                        <div class="mxn2 flex flex-wrap">
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#dark-mode"
+                                                class="h6 caps bold py1 text-decoration-none ">Dark Mode</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#colors"
+                                                class="h6 caps bold py1 text-decoration-none ">Colors</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#type-scale"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Type
+                                                Scale (Coming soon)</a></div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#typography"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Typefaces
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#typography"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Popover
+                                                Menu
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Button
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Elevation
+                                                (Coming soon)</a>
+                                </div>
+                                <div class="px2 col-6 sm-col-4 md-col-3"><a href="#animation"
+                                                class="h6 caps bold inline-block py1 color-inherit text-decoration-none hover-underline">Opacity
+                                                (Coming soon)</a>
+                                </div>
+
+                        </div>
+                </nav>
+                <section id="dark-mode" class="my4 py2">
+                        <a href="#dark-mode" class="my2 bold h3 text-decoration-none c-base">Dark Mode</a>
+                        <div class="my2">
+                                The default colors are designed for light mode. Use <span
+                                        class="border rounded px1"><code>mode-dark</code></span> to switch dark-mode
+                                colors.</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="mode-light"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="mode-dark"&gt;&lt;/div&gt;</code>
+                        </div>
+                </section>
+                <section id="colors" class="my4 py2">
+                        <a href="#colors" class="my2 bold h3 text-decoration-none c-base">Colors</a>
+                        <div class="my2">
+                                Color variables for both light and dark modes are part of the <a target="_blank"
+                                        href="../sass/2_extension_theme">2nd tier</a> of this
+                                framework. Below are
+                                examples of colors for a purple theme defined in
+                                <a target="_blank"
+                                        href="../sass/2_extension_theme/_default_theme.scss">_default_theme.scss</a>.
+                        </div>
+                        <div class="mt4 h4 bold c-base">Background Colors in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-base"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-alt"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-accent"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-warn"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-success"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-white"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-black"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 backdrop"></div>
+                                </div>
+                        </div>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-base"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-alt"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-accent"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-warn"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-success"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-white"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 c-bg-black"></div>
+                                </div>
+                                <div class="m1 inline-block">
+                                        <div class="circle w48rem h48rem elevation1 backdrop"></div>
+                                </div>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-base"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-alt"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-accent"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-warn"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-success"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-white"&gt;&lt;/div&gt; //Not affected by the light/dark mode</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-bg-black"&gt;&lt;/div&gt; //Not affected by the light/dark mode</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="backdrop"&gt;&lt;/div&gt; //Translucent background color for the backdrop of modal windows</code>
+                        </div>
+
+                        <div class="mt4 h4 bold c-base">Text and Fill Colors in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="m1 px2 py1 c-base"><span class="bold">.c-base</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-alt"><span class="bold">.c-alt</span> text and fill color</div>
+                                <div class="m1 px2 py1 c-alt-2"><span class="bold">.c-alt-2</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-accent"><span class="bold">.c-accent</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-warn"><span class="bold">.c-warn</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-white backdrop"><span class="bold">.c-white</span> text and
+                                        fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1 c-black"><span class="bold">.c-black</span> text and fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1"><a href="#">Default anchor color</a>
+                                </div>
+                                <div class="m1 px2 py1"><a class="c-warn" href="#">Anchor color overwritten with
+                                                .c-warn</a>
+                                </div>
+                        </div>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="m1 px2 py1 c-base"><span class="bold">.c-base</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-alt"><span class="bold">.c-alt</span> text and fill color</div>
+                                <div class="m1 px2 py1 c-alt-2"><span class="bold">.c-alt-2</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-accent"><span class="bold">.c-accent</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-warn"><span class="bold">.c-warn</span> text and fill color
+                                </div>
+                                <div class="m1 px2 py1 c-white"><span class="bold">.c-white</span> text and fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1 c-black c-bg-white"><span class="bold">.c-black</span> text and
+                                        fill
+                                        color (Not affected by the light/dark mode)
+                                </div>
+                                <div class="m1 px2 py1"><a href="#">Default anchor color</a>
+                                </div>
+                                <div class="m1 px2 py1"><a class="c-warn" href="#">Anchor color overwritten with
+                                                .c-warn</a>
+                                </div>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-base"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-alt"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-alt-2"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-accent"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-warn"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-white"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="c-black"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;a&gt;&lt;/a&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;a class="c-warn"&gt;&lt;/a&gt;</code>
+                        </div>
+
+                        <div class="mt4 h4 bold c-base">Border Color in Light Mode and Dark Mode</div>
+                        <div class="my2 p2 rounded border c-border mode-light">
+                                <div class="mx2 my3 px2 py1 c-base rounded border">Inherit border color
+                                </div>
+                                <div class="mx2 my3 px2 py1 c-base rounded border c-border"><span
+                                                class="bold">c-border</span> border color
+                                </div>
+                        </div>
+                        <div class="my2 p2 rounded border c-border backdrop mode-dark">
+                                <div class="mx2 my3 px2 py1 c-base rounded border">Inherit border color
+                                </div>
+                                <div class="mx2 my3 px2 py1 c-base rounded border c-border"><span
+                                                class="bold">c-border</span> border color
+                                </div>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="border"&gt;&lt;/div&gt;</code>
+                        </div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="border c-border&gt;&lt;/div&gt;</code>
+                        </div>
+                </section>
+                <!-- <section id="xxxxx" class="my4">
+                        <a href="#xxxxx" class="my2 bold h4 text-decoration-none c-base">Xxxxx</a>
+                        <div class="my2">
+                                ___<span class="border rounded px1"><code>XXX</code></span></div>
+                        <div class="my2 p2 rounded border c-border ">Example</div>
+                        <div class="my2 px2 py1 rounded c-bg-alt">
+                                <code>&lt;div class="xxxxx"&gt;&lt;/div&gt;</code>
+                        </div>
+                </section> -->
+        </div>
+</body>
+
+</html>

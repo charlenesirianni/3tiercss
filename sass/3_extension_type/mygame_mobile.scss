@@ -1,0 +1,17 @@
+// The 1st layer of CSS, using only utility classes
+@import "../1_utilities/utilities";
+
+// The 2nd layer of CSS, defining the theme of the extension, e.g. a League of Legends game theme
+// With theme specific prefix, e.g. "lol-" for League of Legends game theme
+// Can use semantic class names
+@import "../2_extension_theme/mygame_theme";
+
+// The 3rd layer of CSS, defining additional CSS classes that are used by individual extension type, and the Extension Config/Live Config pages
+// With theme specific prefix, e.g. "lol-" for League of Legends game theme
+// Can use semantic class names
+
+html {
+    /* Setting the rem unit */
+    font-size: 10px;
+    letter-spacing: 1px;
+}

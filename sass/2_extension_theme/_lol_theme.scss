@@ -1,0 +1,464 @@
+// CSS for creating the League of Legends theme
+// Use CSS variables if they need to be overwritten at run time by streamer's own brand colors, otherwise, SCSS avariables would work
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
+// Color variable names applicable to all themes
+
+:root {
+    --c-brand: rgb(201, 170, 113);
+    --c-brand-alt: rgb(196, 185, 152);
+    --c-accent: rgb(241, 230, 208);
+    --c-link: var(--c-accent);
+    --c-warn: #e91916;
+    --c-success: #00e6cb;
+    --c-white: rgb(255, 255, 255);
+    --c-white-opacity1: rgba(255, 255, 255, .1);
+    --c-black: rgb(0, 0, 0);
+    --c-black-opacity5: rgba(0, 0, 0, .5);
+    --c-background: #081010;
+    --c-background-base: #0f1f1f;
+    --c-background-alt: rgba(22, 42, 44, 1);
+    --c-background-alt-opacity75: rgba(22, 42, 44, .75);
+    --c-background-alt-2: #365548;
+    --c-background-accent: var(--c-brand);
+    --c-background-backdrop: rgba(0,0,0, 0.8);
+    --c-border: rgba(255,255,255,0.15);
+    --c-text: var(--c-accent);
+    --c-text-alt: rgb(202, 197, 186);
+    --c-text-alt-2: rgb(143, 137, 125);
+}
+
+// Color variable names only applicable to League of Legends theme
+
+$--c-lol-blue: rgba(81, 162, 230, 1);
+$--c-lol-blue-opacity1: rgba(0, 140, 255, 0.1);
+$--c-lol-red: rgba(222, 47, 47, 1);
+$--c-lol-red-opacity1: rgba(255, 0, 51, 0.1);
+$--c-lol-yellow: rgba(255, 248, 140, 1);
+$--c-lol-cloud: #acd2ee;
+$--c-lol-elder: #c9bcdc;
+$--c-lol-infernal: #f26d23;
+$--c-lol-mountain: #a8805d;
+$--c-lol-ocean: #67c4af;
+$--c-lol-border: rgba(54, 85, 72, .5);
+
+html, select, input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: baseline;
+    letter-spacing: .6px;
+}
+
+.lol-title {
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 1px;
+}
+
+body {
+    color: var(--c-text);
+    fill: var(--c-text);
+}
+
+a {
+    color: var(--c-link);
+    fill: var(--c-link);
+}
+
+a:hover {
+    filter: brightness(1.1);
+}
+
+a:active {
+    opacity: .8;
+}
+
+.c-bg-white {
+    background-color: var(--c-white) !important;
+}
+
+.c-white {
+    color: var(--c-white) !important;
+    fill: var(--c-white) !important;
+}
+
+.c-bg-white-opacity1 {
+    background-color: var(--c-white-opacity1) !important;
+}
+
+.c-bg-black {
+    background-color: var(--c-black) !important;
+}
+
+.c-bg-black-opacity5 {
+    background-color: var(--c-black-opacity5) !important;
+}
+
+.c-black {
+    color: var(--c-black) !important;
+    fill: var(--c-black) !important;
+}
+
+.c-bg {
+    background-color: var(--c-background) !important;
+}
+
+.c-bg-base {
+    background-color: var(--c-background-base) !important;
+}
+
+.c-bg-alt {
+    background-color: var(--c-background-alt) !important;
+}
+
+.c-bg-alt-opacity75 {
+    background-color: var(--c-background-alt-opacity75) !important;
+}
+
+.c-bg-alt-2 {
+    background-color: var(--c-background-alt-2) !important;
+}
+
+.c-background-accent {
+    background-color: var(c-background-accent) !important;
+}
+
+.c-base {
+    color: var(--c-text) !important;
+    fill: var(--c-text) !important;
+}
+
+.c-alt {
+    color: var(--c-text-alt) !important;
+    fill: var(--c-text-alt) !important;
+}
+
+.c-alt-2 {
+    color: var(--c-text-alt-2) !important;
+    fill: var(--c-text-alt-2) !important;
+}
+
+.c-bg-brand {
+    background-color: var(--c-brand) !important;
+}
+
+.c-brand {
+    color: var(--c-brand) !important;
+    fill: var(--c-brand) !important;
+}
+
+.c-warn {
+    color: var(--c-warn) !important;
+    fill: var(--c-warn) !important;
+}
+
+.c-bg-warn {
+    background-color: var(--c-warn) !important;
+}
+
+.c-success {
+    color: var(--c-success) !important;
+    fill: var(--c-success) !important;
+}
+
+.c-bg-success {
+    background-color: var(--c-success) !important;
+}
+
+.c-border {
+    border-color: var(--c-border);
+}
+
+.c-border-brand {
+    border-color: var(--c-brand);
+}
+
+.backdrop {
+    background-color: var(--c-background-backdrop);
+}
+
+.lol-c-blue {
+    color: $--c-lol-blue;
+    fill: $--c-lol-blue;
+}
+
+.lol-c-bg-blue {
+    background-color: $--c-lol-blue !important;
+}
+
+.lol-c-border-blue {
+    border-color: $--c-lol-blue !important;
+}
+
+.lol-c-bg-blue-gradient {
+    background: radial-gradient(20% center, $--c-lol-blue-opacity1 50%, transparent);
+    background: -webkit-radial-gradient(20% center, $--c-lol-blue-opacity1 50%, transparent);
+}
+
+.lol-c-bg-black-gradient {
+    background: linear-gradient(to right, transparent 0%, var(--c-black-opacity5) 10%, var(--c-black-opacity5) 90%, transparent 100%);
+}
+
+.lol-c-bg-alt-gradient {
+    background: linear-gradient(90deg, transparent 0%, var(--c-background-alt-opacity75) 25%, var(--c-background-alt-opacity75) 80%, transparent 100%);
+}
+
+.lol-c-red {
+    color: $--c-lol-red !important;
+    fill: $--c-lol-red !important;
+}
+
+.lol-c-bg-red {
+    background-color: $--c-lol-red !important;
+}
+
+.lol-c-border-red {
+    border-color: $--c-lol-red !important;
+}
+
+.lol-c-bg-red-gradient {
+    background: radial-gradient(20% center, $--c-lol-red-opacity1 50%, transparent);
+    background: -webkit-radial-gradient(20% center, $--c-lol-red-opacity1 50%, transparent);
+}
+
+.lol-c-yellow {
+    color: $--c-lol-yellow !important;
+    fill: $--c-lol-yellow !important;
+}
+
+.lol-c-cloud {
+    color: $--c-lol-cloud !important;
+    fill: $--c-lol-cloud !important;
+}
+
+.lol-c-elder {
+    color: $--c-lol-elder !important;
+    fill: $--c-lol-elder !important;
+}
+
+.lol-c-infernal {
+    color: $--c-lol-infernal !important;
+    fill: $--c-lol-infernal !important;
+}
+
+.lol-c-mountain {
+    color: $--c-lol-mountain !important;
+    fill: $--c-lol-mountain !important;
+}
+
+.lol-c-ocean {
+    color: $--c-lol-ocean !important;
+    fill: $--c-lol-ocean !important;
+}
+
+.lol-c-bg-dead {
+    position: relative;
+    margin-left: -2rem;
+    padding-left: 2.5rem;
+}
+
+.lol-c-bg-dead:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    background: radial-gradient(at 20% center, rgba($--c-lol-red, .3), rgba($--c-lol-red, .25), rgba($--c-lol-red, .05), transparent, transparent);
+    background: -webkit-radial-gradient(at 20% center, rgba($--c-lol-red, .3), rgba($--c-lol-red, .25), rgba($--c-lol-red, .05), transparent, transparent);
+}
+
+.lol-c-border {
+    border-color: $--c-lol-border !important;
+}
+
+.lol-c-border-alt-2 {
+    border-color: var(--c-background-alt-2) !important;
+}
+
+.lol-textshadow1 {
+    text-shadow: 1px 1px 0px #000, 0px 0px 3px #000;
+}
+
+.lol-textshadow2 {
+    text-shadow: 1px 1px 0px #000, 0px 0px 3px #000, 0px 0px 5px #000;
+}
+
+.lol-textshadow3 {
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, .5), 0px 0px 5px rgba(0, 0, 0, .5);
+}
+
+.lol-boxshadow2 {
+    box-shadow: 1px 1px 0px #000, 0px 0px 3px #000, 0px 0px 5px #000;
+}
+
+.lol-tab-active {
+    text-shadow: 0 0 1px var(--c-black), 0 0 1rem var(--c-brand) !important;
+}
+
+.lol-hover-glow {
+    transition: filter .2s ease-in-out;
+    text-shadow: 0 0 2px var(--c-black), 0 0 .5rem var(--c-brand) !important;
+}
+
+.lol-hover-glow:hover {
+    filter: brightness(1.25);
+}
+
+.lol-bg-cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.lol-bg-90p {
+    background-size: 90% !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+}
+
+.lol-bg-120p {
+    background-size: 120% !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+}
+
+.lol-badge-rank {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: var(--c-black);
+}
+
+.lol-badge-level {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: .9rem;
+    padding-top: .1rem;
+    background: var(--c-black);
+}
+
+.lol-badge-status {
+    position: absolute;
+    bottom: 1rem;
+    left: 0rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+.lol-badge-item {
+    position: absolute;
+    bottom: -2px;
+    right: 2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.lol-badge-trinket {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.lol-position {
+    right: -6.5rem;
+    top: 1rem;
+}
+
+.lol-winrate-l {
+    left: -3.4rem;
+}
+
+.lol-winrate-r {
+    right: -3.4rem;
+}
+
+.lol-winrate-champ-l {
+    left: -3.4rem;
+    top: -.5rem;
+}
+
+.lol-winrate-champ-r {
+    right: -3.4rem;
+    top: -.5rem;
+}
+
+.lol-matchhistory:hover {
+    background: linear-gradient(90deg, transparent 0%, var(--c-white-opacity1) 25%, var(--c-white-opacity1) 80%, transparent 100%);
+}
+
+.lol-divider-main {
+    background-image: url(./assets/divider@2x.png);
+    background-size: 100% 2px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.lol-mid-marker {
+    margin-top: 2.1rem;
+    margin-right: .8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: contain;
+    background-image: url(./assets/mid_marker@2x.png);
+    background-repeat: no-repeat;
+}
+
+@supports (-moz-appearance:none) {
+    /* for Safari */
+    .lol-mid-marker {
+        margin-left: 0;
+    }
+}
+
+.lol-background-landscape {
+    background: url('./assets/landscape.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+.lol-ani-highlight {
+    animation: 4s ease-out 0s 1 lol-ani-highlight;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+}
+
+@keyframes lol-ani-highlight {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        border-color: rgba(201, 170, 113, 1);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 8px rgba(201, 170, 113, .5);
+        filter: brightness(1.5);
+    }
+    40% {
+        filter: brightness(1);
+    }
+    80% {
+        border-color: rgba(201, 170, 113, 1);
+    }
+    100% {
+        border-color: rgba(201, 170, 113, 0);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 8px rgba(201, 170, 113, 0);
+    }
+}
