@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"> </script>
+    <link href="../../../src/css/default_theme/panel.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mode-light fullheight flex flex-column c-bg line-height-4">
+        <header class="z2 c-bg-accent elevation1">
+            <div class="flex px2 py1">
+                <div class="flex items-center px2 h5 caps c-white line-height-2">
+                    h5 caps c-white
+                </div>
+                <div class="flex flex-auto justify-end items-center c-white">
+                    <button class="rounded iconbutton iconbutton--small">
+                        <svg class="c-white" version="1.1" viewBox="0 0 24 24" x="0px" y="0px">
+                            <path
+                                d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-auto overflow-auto flex-column py3 pl3 pr2">
+            <div class="flex">
+                <div class="flex flex-column items-center">
+                    <a href="#" target="_blank" class="flex"><img class="w120rem h120rem elevation1 rounded"
+                            src="../assets/img.png"></a>
+                    <div class="inline-block fullwidth">
+                        <div class="popover popover--below popover--right flex justify-center items-center">
+                            <button class="mt1 rounded button button--small fullwidth">
+                                <svg version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                    <path
+                                        d="M9.979 14.992h.049c2.887-2.066 5.971-5.076 5.971-7.327C16 6.675 15.48 5 13.537 5c-1.163 0-2.348 1.583-2.67 2.137a1.004 1.004 0 0 1-.865.498h-.002a1 1 0 0 1-.866-.5C8.813 6.583 7.628 5 6.465 5 4.519 5 3.998 6.675 3.998 7.665c0 2.251 3.086 5.261 5.974 7.327h.005zm.02 2.01c-.417 0-.834-.128-1.19-.383-2.047-1.466-6.81-5.272-6.81-8.954C2 5.346 3.534 3 6.466 3c1.537 0 2.768 1.046 3.534 1.936C10.768 4.046 12 3 13.537 3 16.466 3 18 5.346 18 7.665c0 3.682-4.76 7.488-6.809 8.954a2.047 2.047 0 0 1-1.192.383z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                <span>button</span>
+                            </button>
+                            <div class="popover-margin w160rem my1">
+                                <div class="popover-content p1 line-height-3 h6">
+                                    popover popover--below popover--right w160rem my1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h6 flex-auto pl2">
+                    <div class="h2 bold my1 pb1 line-height-2">
+                        h2 bold
+                    </div>
+                    <div class="h8 caps mt1 c-alt-2">
+                        h8 caps c-alt-2
+                    </div>
+                    <div>
+                        Text text text text text text text text text text text text text text text text text text text
+                        text text text text.
+                        <a class="text-decoration-none" href="#" target="_blank">
+                            See details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Start: cards -->
+            <div class="mt3">
+                <div class="h8 caps mt1 c-alt-2">
+                    h8 caps c-alt-2
+                </div>
+                <div class="flex flex-wrap mt1 mb1">
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1 flex justify-center items-center relative popover popover--above">
+                        <a href="#" target="_blank" class="flex opacity75">
+                            <div
+                                class="w64rem h64rem rounded veil absolute top-0 left-0 flex justify-end items-end pr1 cursor--not-allowed">
+                                <div>
+                                    <svg class="c-white w20rem h20rem" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div><img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                        <div class="popover-margin w120rem py1">
+                            <div class="popover-content p2 line-height-3 h6">
+                                <div>popover popover--above w120rem py1</div>
+                                <button class="mt2 button button--small button--hollow rounded fullwidth">
+                                    button--hollow
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1">
+                        <a href="#" target="_blank" class="flex">
+                            <img class="w64rem h64rem elevation1 rounded elevation1" src="../assets/img.png">
+                        </a>
+                    </div>
+                    <div class="mr1 mb1 flex">
+                        <button class="button button--text button--small rounded w64rem h64rem">
+                            More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End: cards -->
+        </main>
+
+        <nav class="z2 elevation1 line-height-3">
+            <div class="c-bg-base elevation1">
+                <div class="flex">
+                    <div class="flex-auto px2">
+                        <ul class="flex m0 p0 h6 caps">
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-center justify-center center px1 py1 mt1 text-decoration-none"
+                                    href="#">Tab One</a>
+                                <div class="absolute bottom-0 fullwidth h4px c-bg-accent"></div>
+                            </li>
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-center justify-center center px1 py1 mt1 text-decoration-none"
+                                    href="#">Tab Two</a>
+                            </li>
+                            <li class="flex flex-auto py1 relative">
+                                <a class="bold flex flex-auto items-center justify-center center px1 py1 mt1 text-decoration-none"
+                                    href="#">Tab Three</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+</body>
+
+</html>
