@@ -90,6 +90,10 @@
     word-wrap: break-word
 }
 
+.break-all {
+    word-break: break-all;
+}
+
 .line-height-1 {
     line-height: 1
 }
@@ -186,7 +190,8 @@
     overflow-y: auto
 }
 
-.clearfix:after, .clearfix:before {
+.clearfix:after,
+.clearfix:before {
     content: " ";
     display: table
 }
@@ -267,7 +272,8 @@
     margin-bottom: 0
 }
 
-.ml0, .mx0 {
+.ml0,
+.mx0 {
     margin-left: 0
 }
 
@@ -296,7 +302,8 @@
     margin-bottom: .5rem
 }
 
-.ml1, .mx1 {
+.ml1,
+.mx1 {
     margin-left: .5rem
 }
 
@@ -325,7 +332,8 @@
     margin-bottom: 1rem
 }
 
-.ml2, .mx2 {
+.ml2,
+.mx2 {
     margin-left: 1rem
 }
 
@@ -354,7 +362,8 @@
     margin-bottom: 2rem
 }
 
-.ml3, .mx3 {
+.ml3,
+.mx3 {
     margin-left: 2rem
 }
 
@@ -383,7 +392,8 @@
     margin-bottom: 4rem
 }
 
-.ml4, .mx4 {
+.ml4,
+.mx4 {
     margin-left: 4rem
 }
 
@@ -420,7 +430,8 @@
     margin-left: auto
 }
 
-.mr-auto, .mx-auto {
+.mr-auto,
+.mx-auto {
     margin-right: auto
 }
 
@@ -444,7 +455,8 @@
     padding-bottom: 0
 }
 
-.pl0, .px0 {
+.pl0,
+.px0 {
     padding-left: 0
 }
 
@@ -581,7 +593,8 @@
     float: left
 }
 
-.col, .col-right {
+.col,
+.col-right {
     box-sizing: border-box
 }
 
@@ -642,43 +655,56 @@
         float: left;
         box-sizing: border-box
     }
+
     .sm-col-right {
         float: right;
         box-sizing: border-box
     }
+
     .sm-col-1 {
         width: 8.33333%
     }
+
     .sm-col-2 {
         width: 16.66667%
     }
+
     .sm-col-3 {
         width: 25%
     }
+
     .sm-col-4 {
         width: 33.33333%
     }
+
     .sm-col-5 {
         width: 41.66667%
     }
+
     .sm-col-6 {
         width: 50%
     }
+
     .sm-col-7 {
         width: 58.33333%
     }
+
     .sm-col-8 {
         width: 66.66667%
     }
+
     .sm-col-9 {
         width: 75%
     }
+
     .sm-col-10 {
         width: 83.33333%
     }
+
     .sm-col-11 {
         width: 91.66667%
     }
+
     .sm-col-12 {
         width: 100%
     }
@@ -689,43 +715,56 @@
         float: left;
         box-sizing: border-box
     }
+
     .md-col-right {
         float: right;
         box-sizing: border-box
     }
+
     .md-col-1 {
         width: 8.33333%
     }
+
     .md-col-2 {
         width: 16.66667%
     }
+
     .md-col-3 {
         width: 25%
     }
+
     .md-col-4 {
         width: 33.33333%
     }
+
     .md-col-5 {
         width: 41.66667%
     }
+
     .md-col-6 {
         width: 50%
     }
+
     .md-col-7 {
         width: 58.33333%
     }
+
     .md-col-8 {
         width: 66.66667%
     }
+
     .md-col-9 {
         width: 75%
     }
+
     .md-col-10 {
         width: 83.33333%
     }
+
     .md-col-11 {
         width: 91.66667%
     }
+
     .md-col-12 {
         width: 100%
     }
@@ -736,43 +775,56 @@
         float: left;
         box-sizing: border-box
     }
+
     .lg-col-right {
         float: right;
         box-sizing: border-box
     }
+
     .lg-col-1 {
         width: 8.33333%
     }
+
     .lg-col-2 {
         width: 16.66667%
     }
+
     .lg-col-3 {
         width: 25%
     }
+
     .lg-col-4 {
         width: 33.33333%
     }
+
     .lg-col-5 {
         width: 41.66667%
     }
+
     .lg-col-6 {
         width: 50%
     }
+
     .lg-col-7 {
         width: 58.33333%
     }
+
     .lg-col-8 {
         width: 66.66667%
     }
+
     .lg-col-9 {
         width: 75%
     }
+
     .lg-col-10 {
         width: 83.33333%
     }
+
     .lg-col-11 {
         width: 91.66667%
     }
+
     .lg-col-12 {
         width: 100%
     }
@@ -1143,7 +1195,7 @@
 }
 
 .hide {
-    position: absolute!important;
+    position: absolute !important;
     height: 1px;
     width: 1px;
     overflow: hidden;
@@ -1152,28 +1204,28 @@
 
 @media (max-width:40em) {
     .xs-hide {
-        display: none!important
+        display: none !important
     }
 }
 
 @media (min-width:40em) and (max-width:52em) {
     .sm-hide {
-        display: none!important
+        display: none !important
     }
 }
 
 @media (min-width:52em) and (max-width:64em) {
     .md-hide {
-        display: none!important
+        display: none !important
     }
 }
 
 @media (min-width:64em) {
     .lg-hide {
-        display: none!important
+        display: none !important
     }
 }
 
 .display-none {
-    display: none!important
+    display: none !important
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sasssdefaultoverlay": "node-sass sass/3_extension_type/default_video_overlay.scss src/css/default-theme/video_overlay.css",
+    "compile:sasssdefaultpanel": "node-sass sass/3_extension_type/default_panel.scss src/css/default-theme/panel.css",
     "compile:sasslolconfig": "node-sass sass/3_extension_type/lol_config.scss src/css/game-theme/lol/config.css",
     "compile:sasslolmobile": "node-sass sass/3_extension_type/lol_mobile.scss src/css/game-theme/lol/mobile.css",
     "compile:sassloloverlay": "node-sass sass/3_extension_type/lol_video_overlay.scss src/css/game-theme/lol/video_overlay.css",

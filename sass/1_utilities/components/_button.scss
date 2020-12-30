@@ -50,9 +50,13 @@ a.button svg {
     font-size: 1.2rem;
 }
 
-.button:hover,
+.button:hover {
+    filter: brightness(1.2);
+}
+
 .iconbutton:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
+    background-color: rgba($color: #fff, $alpha: 0.2);
 }
 
 .button:focus,

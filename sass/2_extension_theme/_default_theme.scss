@@ -5,7 +5,7 @@
     --c-accent: #772ce8;
     --c-link: var(--c-accent);
     --c-warn: #e91916;
-    --c-success: #00e6cb;
+    --c-success: #00a865;
     --c-white: rgb(255, 255, 255);
     --c-black: rgb(0, 0, 0);
     --c-background: #f7f7f8;
@@ -52,6 +52,10 @@ code {
 a {
     color: var(--c-link);
     fill: var(--c-link);
+}
+
+a:hover {
+    filter: brightness(1.2);
 }
 
 a:active {
@@ -127,6 +131,11 @@ a:active {
 .c-warn {
     color: var(--c-warn) !important;
     fill: var(--c-warn) !important;
+}
+
+.c-success {
+    color: var(--c-success) !important;
+    fill: var(--c-success) !important;
 }
 
 .c-border {
