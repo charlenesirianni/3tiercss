@@ -9,8 +9,23 @@
     <link href="../../../src/css/default_theme/panel.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-hidden">
     <div class="mode-dark fullheight flex flex-column c-bg line-height-4">
+        <!-- Start: Notification -->
+        <div class="absolute bottom-0 left-0 fullwidth flex py2 elevation1 c-bg-success c-white ani-slide-up z3">
+            <div class="ml2 flex-auto self-center h5">Notifcation text here. Can be used to offer feedback to a user
+                action.</div>
+            <div class="mx2">
+                <button class="iconbutton rounded c-white">
+                    <svg width="16px" height="16px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                        <path
+                            d="M11.414 10l5.293-5.293a.999.999 0 1 0-1.414-1.414L10 8.586 4.707 3.293a.999.999 0 1 0-1.414 1.414L8.586 10l-5.293 5.293a.999.999 0 1 0 1.414 1.414L10 11.414l5.293 5.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- End: Notification -->
         <header class="z2 c-bg-accent elevation1">
             <div class="flex px2 py1">
                 <div class="flex items-center px2 h5 caps c-white line-height-2">
@@ -216,7 +231,6 @@
             </div>
         </nav>
     </div>
-
 </body>
 
 </html>

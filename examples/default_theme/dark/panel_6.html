@@ -9,8 +9,28 @@
     <link href="../../../src/css/default_theme/panel.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-hidden">
     <div class="mode-dark fullheight flex flex-column c-bg line-height-4">
+        <!-- Start: Full-screen dialog -->
+        <div class="absolute flex justify-center items-center fullheight fullwidth backdrop z3">
+            <div class="rounded mx4 p3 flex flex-column max-width-2 elevation1 c-bg-base border c-border ani-pop-up">
+                <header class="mb1 bold h5">
+                    Lorem ipsum?
+                </header>
+                <main class="flex-auto h5">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis scelerisque justo, vitae
+                        efficitur dolor.</div>
+                    <div class="mt3">
+                        <button class="py1 px2 rounded button button--text c-bg-warn">
+                            <span class="c-white">Button</span>
+                        </button><button class="ml2 py1 px2 rounded button button--text">
+                            Cancel
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- End: Full-screen dialog -->
         <header class="z2 c-bg-accent elevation1">
             <div class="flex px2 py1">
                 <div class="flex items-center px2 h5 caps c-white line-height-2">
@@ -216,7 +236,6 @@
             </div>
         </nav>
     </div>
-
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"> </script>
+    <link href="../../../src/css/default_theme/panel.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+    <div class="mode-light fullheight flex flex-column c-bg line-height-4">
+        <!-- Start: Full-screen dialog -->
+        <div class="absolute fullheight fullwidth flex flex-column c-bg z3 ani-slide-left">
+            <nav class="z4 c-bg-base border-bottom c-border">
+                <div class="px2 py2 flex flex-auto items-center elevation1">
+                    <div>
+                        <button class="iconbutton rounded">
+                            <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                <path
+                                    d="M13.707 16.707a1.005 1.005 0 0 0 0-1.42l-5.285-5.286 5.285-5.287a1.007 1.007 0 0 0 0-1.42.996.996 0 0 0-.71-.294.994.994 0 0 0-.71.295L6.295 9.29a1.003 1.003 0 0 0 0 1.42l5.994 5.996a1.003 1.003 0 0 0 1.419 0"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <main class="flex-auto overflow-auto flex-column px2 py3">
+                <div class="flex items-center py2 px1">
+                    <div class="flex-auto ml2 c-base h4">
+                        Item title here
+                        <div class="h6 c-alt-2">Additional info here if any</div>
+                    </div>
+                    <div class="mx2">
+                        <label class="switch">
+                            <input type="checkbox" checked="">
+                            <span class="switch__slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex items-center py2 px1">
+                    <div class="flex-auto ml2 c-base h4">
+                        Item title here
+                        <div class="h6 c-alt-2">Additional info here if any</div>
+                    </div>
+                    <div class="mx2">
+                        <label class="switch">
+                            <input type="checkbox" checked="">
+                            <span class="switch__slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex items-center py2 px1">
+                    <div class="flex-auto ml2 c-base h4">
+                        Item title here
+                        <div class="h6 c-alt-2">Additional info here if any</div>
+                    </div>
+                    <div class="mx2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="switch__slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- End: Full-screen dialog -->
+        <div class="fullheight fullwidth c-bg-accent"></div>
+    </div>
+</body>
+
+</html>
