@@ -6,24 +6,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"> </script>
-    <link href="./css/mobile.css" rel="stylesheet">
+    <link link href="../../src/css/mygame_theme/mobile.css" rel="stylesheet">
 </head>
 
 <body class="overflow-hidden">
     <div class="flex flex-column justify-center fullheight c-bg-alt h5">
         <nav class="flex h40rem px3 mt2">
-            <div class="relative flex flex-column flex-auto justify-center items-center truncate px1 c-brand h4 bold caps">Inventory
+            <div
+                class="relative flex flex-column flex-auto justify-center items-center truncate px1 c-brand h4 bold caps">
+                Inventory
                 <div class="c-bg-brand h2px fullwidth absolute bottom-0"></div>
             </div>
-            <div class="relative flex flex-column flex-auto justify-center items-center truncate px1 h4 bold caps">Map</div>
-            <div class="relative flex flex-column flex-auto justify-center items-center truncate px1 h4 bold caps">History</div>
+            <div class="relative flex flex-column flex-auto justify-center items-center truncate px1 h4 bold caps">Map
+            </div>
+            <div class="relative flex flex-column flex-auto justify-center items-center truncate px1 h4 bold caps">
+                History</div>
         </nav>
         <main class="flex flex-column flex-auto px3 pb4 mt3 mb4 overflow-y-auto">
             <!-- Start: inventory -->
             <div id="id-inventory">
                 <div class="my1">
                     <div class="h40rem mygame-notched">
-                        <a class="flex flex-auto justify-center items-center fullheight cursor--pointer mygame-notched-inside mygame-c-bg-brand-gradient c-black caps">Section Title</a>
+                        <a
+                            class="flex flex-auto justify-center items-center fullheight cursor--pointer mygame-notched-inside mygame-c-bg-brand-gradient c-black caps">Section
+                            Title</a>
                     </div>
                     <div class="flex mb1px c-bg-black-opacity5 px2 py1" id='id-item-01'>
                         <div class="pr2 mr1">
@@ -36,7 +42,7 @@
                             <div class="table line-height-3">
                                 <div class="table-row">
                                     <div class="table-cell caps bold h6 pr2 right-align opacity4">Name: </div>
-                                    <div class="table-cell">Bacon Ipsum</div>
+                                    <div class="table-cell">Bacon Ipsum (Click me)</div>
                                 </div>
                                 <div class="table-row">
                                     <div class="table-cell caps bold h6 pr2 right-align opacity4">Atch: </div>
@@ -94,17 +100,23 @@
                 </div>
                 <div class="my1">
                     <div class="my1 h40rem mygame-notched p1px mygame-c-bg-brand-gradient">
-                        <a class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section Title</a>
+                        <a
+                            class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section
+                            Title</a>
                     </div>
                 </div>
                 <div class="my1">
                     <div class="my1 h40rem mygame-notched p1px mygame-c-bg-brand-gradient">
-                        <a class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section Title</a>
+                        <a
+                            class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section
+                            Title</a>
                     </div>
                 </div>
                 <div class="my1">
                     <div class="my1 h40rem mygame-notched p1px mygame-c-bg-brand-gradient">
-                        <a class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section Title</a>
+                        <a
+                            class="flex flex-auto justify-center items-center fullheight cursor--pointer c-bg mygame-notched-inside caps">Section
+                            Title</a>
                     </div>
                 </div>
             </div>
@@ -112,24 +124,29 @@
         </main>
 
         <!-- Start: details overlay -->
-        <div class="absolute px3 pb3 flex flex-column left-0 top-0 pl1 fullheight fullwidth justify-center c-bg hide" id="id-details-overlay">
+        <div class="absolute px3 pb3 flex flex-column left-0 top-0 pl1 fullheight fullwidth justify-center c-bg hide"
+            id="id-details-overlay">
             <div class="absolute top-0 right-0 flex justify-center items-center h40rem m2">
                 <button class="iconbutton iconbutton--small button--hollow circle mr2" id="id-details-close">
                     <svg version="1.1" viewBox="0 0 24 24" x="0px" y="0px">
-                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                        </path>
                         <path d="M0 0h24v24H0z" fill="none"></path>
                     </svg>
                 </button>
             </div>
             <div class="flex justify-center items-center h40rem m2">
                 <button class="iconbutton h40rem w40rem mx3 c-alt-2">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 24 24">
                         <path d="M12.4,21.9L2.6,12l9.9-9.9h9L11.6,12l9.9,9.9H12.4z" />
                     </svg>
                 </button>
                 <div class="h4 caps c-alt-2">Details</div>
                 <button class="iconbutton h40rem w40rem mx3 c-alt-2">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 24 24">
                         <path d="M11.6,2.1l9.9,9.9l-9.9,9.9h-9l9.9-9.9L2.6,2.1H11.6z" />
                     </svg>
                 </button>
@@ -179,37 +196,43 @@
                                 <div class="flex flex-wrap pb1">
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
                                     <div class="center p1">
                                         <svg class="mx2 h40em w40rem opacity4" viewBox="0 0 24 24">
-                                            <path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
+                                            <path
+                                                d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" />
                                         </svg>
                                         <div class="h8 caps">Title Here</div>
                                     </div>
@@ -219,7 +242,26 @@
                         <div class="fullwidth p1">
                             <div class="fullheight c-bg-alt mygame-notched p2">
                                 <div class="mb1 h6 bold caps opacity4">Title here</div>
+                                <div>Shoulder swine pork chop cow drumstick flank rump sausage burgdoggen. Frankfurter
+                                    strip steak pork chop jowl hamburger ball tip.
+                                    Flank pastrami ham hock, tail turducken beef alcatra porchetta
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fullwidth p1">
+                            <div class="fullheight c-bg-alt mygame-notched p2">
+                                <div class="mb1 h6 bold caps opacity4">Title here</div>
                                 <div>
+                                    Flank pastrami ham hock, tail turducken beef alcatra porchetta
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fullwidth p1">
+                            <div class="fullheight c-bg-alt mygame-notched p2">
+                                <div class="mb1 h6 bold caps opacity4">Title here</div>
+                                <div>
+                                    Shoulder swine pork chop cow drumstick flank rump sausage burgdoggen. Frankfurter
+                                    strip steak pork chop jowl hamburger ball tip.
                                     Flank pastrami ham hock, tail turducken beef alcatra porchetta
                                 </div>
                             </div>

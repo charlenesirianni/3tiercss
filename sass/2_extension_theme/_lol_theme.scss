@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
-// Color variable names applicable to all themes
+// Start: color variable names applicable to all themes
 
 :root {
     --c-brand: rgb(201, 170, 113);
@@ -22,14 +22,14 @@
     --c-background-alt-opacity75: rgba(22, 42, 44, .75);
     --c-background-alt-2: #365548;
     --c-background-accent: var(--c-brand);
-    --c-background-backdrop: rgba(0,0,0, 0.8);
-    --c-border: rgba(255,255,255,0.15);
+    --c-background-backdrop: rgba(0, 0, 0, 0.8);
+    --c-border: rgba(255, 255, 255, 0.15);
     --c-text: var(--c-accent);
     --c-text-alt: rgb(202, 197, 186);
     --c-text-alt-2: rgb(143, 137, 125);
 }
 
-// Color variable names only applicable to League of Legends theme
+// Start: color variable names only applicable to League of Legends theme
 
 $--c-lol-blue: rgba(81, 162, 230, 1);
 $--c-lol-blue-opacity1: rgba(0, 140, 255, 0.1);
@@ -43,7 +43,10 @@ $--c-lol-mountain: #a8805d;
 $--c-lol-ocean: #67c4af;
 $--c-lol-border: rgba(54, 85, 72, .5);
 
-html, select, input, textarea {
+html,
+select,
+input,
+textarea {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     vertical-align: baseline;
     letter-spacing: .6px;
@@ -422,6 +425,7 @@ a:active {
 }
 
 @supports (-moz-appearance:none) {
+
     /* for Safari */
     .lol-mid-marker {
         margin-left: 0;
@@ -445,18 +449,22 @@ a:active {
     0% {
         opacity: 0;
     }
+
     10% {
         opacity: 1;
         border-color: rgba(201, 170, 113, 1);
         box-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 8px rgba(201, 170, 113, .5);
         filter: brightness(1.5);
     }
+
     40% {
         filter: brightness(1);
     }
+
     80% {
         border-color: rgba(201, 170, 113, 1);
     }
+
     100% {
         border-color: rgba(201, 170, 113, 0);
         box-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 8px rgba(201, 170, 113, 0);

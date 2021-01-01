@@ -7,11 +7,8 @@
     "compile:sasssdefaultoverlay": "node-sass sass/3_extension_type/default_video_overlay.scss src/css/default_theme/video_overlay.css",
     "compile:sasssdefaultpanel": "node-sass sass/3_extension_type/default_panel.scss src/css/default_theme/panel.css",
     "compile:sasssdefaultconfig": "node-sass sass/3_extension_type/default_config.scss src/css/default_theme/config.css",
-    "compile:sasslolconfig": "node-sass sass/3_extension_type/lol_config.scss src/css/game_theme/lol/config.css",
-    "compile:sasslolmobile": "node-sass sass/3_extension_type/lol_mobile.scss src/css/game_theme/lol/mobile.css",
-    "compile:sassloloverlay": "node-sass sass/3_extension_type/lol_video_overlay.scss src/css/game_theme/lol/video_overlay.css",
-    "compile:sassmygameoverlay": "node-sass sass/3_extension_type/mygame_video_overlay.scss src/css/game_theme/mygame/video_overlay.css",
-    "compile:sassmygamemobile": "node-sass sass/3_extension_type/mygame_mobile.scss src/css/game_theme/mygame/mobile.css"
+    "compile:sasssmygameoverlay": "node-sass sass/3_extension_type/mygame_video_overlay.scss src/css/mygame_theme/video_overlay.css",
+    "compile:sasssmygamemobile": "node-sass sass/3_extension_type/mygame_mobile.scss src/css/mygame_theme/mobile.css"
   },
   "repository": {
     "type": "git",
