@@ -72,13 +72,16 @@
                 styling of the League of Legends player's win rate in the game.
             </li>
             <li class="my1 ml4">
-                The third tier of the SASS files defines additional CSS classes that are used by individual extension
+                The third tier of the SASS files defines additional CSS classes that are
+                only used by a specific
+                extension
                 type (<span class="bold">panel</span>, <span class="bold">video overlay</span> and <span
                     class="bold">mobile</span>), and
                 the config pages (<span class="bold">extension config</span> and <span class="bold">extension live
-                    config</span>).
-                Same with the files in the 2nd tier, we use theme specific prefix, e.g. "lol-" for League of Legends
-                game theme. Semantic class names may be used in this tier too.
+                    config</span>). This is where the base size of <code>rem</code> is specified so the base size can
+                vary according to the dynamic size of a specific extension type. Same with the files in the 2nd tier, we
+                use theme specific prefix, e.g. "lol-" for League
+                of Legends game theme. Semantic class names may be used in this tier too.
             </li>
         </ol>
         <div class="my1">This framework can also be used for non Twitch-extension web sites. Simply exclude the third
