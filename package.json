@@ -8,7 +8,8 @@
     "compile:sasssdefaultpanel": "node-sass sass/3_extension_type/default_panel.scss src/css/default_theme/panel.css",
     "compile:sasssdefaultconfig": "node-sass sass/3_extension_type/default_config.scss src/css/default_theme/config.css",
     "compile:sasssmygameoverlay": "node-sass sass/3_extension_type/mygame_video_overlay.scss src/css/mygame_theme/video_overlay.css",
-    "compile:sasssmygamemobile": "node-sass sass/3_extension_type/mygame_mobile.scss src/css/mygame_theme/mobile.css"
+    "compile:sasssmygamemobile": "node-sass sass/3_extension_type/mygame_mobile.scss src/css/mygame_theme/mobile.css",
+    "compile:sasssfortnitepanel": "node-sass sass/3_extension_type/fortnite_panel.scss src/css/fortnite_theme/panel.css"
   },
   "repository": {
     "type": "git",

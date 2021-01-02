@@ -1561,6 +1561,11 @@ input:checked + .switch__slider:before {
 ::-webkit-scrollbar-corner {
   background-color: transparent; }
 
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  vertical-align: baseline; }
+
 :root {
   --c-brand: #00FAFA;
   --c-brand-alt: #1EBBFF;
@@ -1582,11 +1587,6 @@ input:checked + .switch__slider:before {
   --c-text: #EFEFF1;
   --c-text-alt: #DEDEE3;
   --c-text-alt-2: #ADADB8; }
-
-* {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300;
-  vertical-align: baseline; }
 
 body {
   color: var(--c-text);
@@ -1637,8 +1637,11 @@ a:active {
 .c-bg-alt-2 {
   background-color: var(--c-background-alt-2) !important; }
 
-.c-background-accent {
-  background-color: var(c-background-accent) !important; }
+.c-bg-brand {
+  background-color: var(--c-brand) !important; }
+
+.c-bg-accent {
+  background-color: var(--c-background-accent) !important; }
 
 .c-base {
   color: var(--c-text) !important;
@@ -1652,9 +1655,6 @@ a:active {
   color: var(--c-text-alt-2) !important;
   fill: var(--c-text-alt-2) !important; }
 
-.c-bg-brand {
-  background-color: var(--c-brand) !important; }
-
 .c-brand {
   color: var(--c-brand) !important;
   fill: var(--c-brand) !important; }
@@ -1662,6 +1662,10 @@ a:active {
 .c-warn {
   color: var(--c-warn) !important;
   fill: var(--c-warn) !important; }
+
+.c-success {
+  color: var(--c-success) !important;
+  fill: var(--c-success) !important; }
 
 .c-bg-warn {
   background-color: var(--c-warn) !important; }
