@@ -48,7 +48,13 @@
 <body class="fullheight m0 h4 line-height-4">
     <div class="t-center p4">
         <div class="h1 bold">CSS for Twitch Extensions</div>
-        <div class="mb4">A tiered approach to build theme-able and reusable CSS</div>
+        <div class="mb4">A tiered approach to build theme-able and reusable CSS. Some real-world examples using an
+            earlier version of this framework include <a target="_blank"
+                href="https://blog.twitch.tv/en/2020/02/20/live-tracker-extension-for-league-of-legends-get-live-and-on-demand-stats-for-league-matches/">Live
+                Tracker Extension for League of
+                Legends</a> and <a target="_blank"
+                href="https://github.com/charlenesirianni/tft-twitch-extension">Teamfight Tactics Directory
+                Extension</a>.</div>
         <div class="h2 mt4 bold">The 3-tier SASS framework</div>
         <div class="my1">The SASS files in this framework are organized into tiers by levels of reusability. The SASS
             files can then be
@@ -90,12 +96,13 @@
         <div class="h2 mt4 bold">How to use it for your Twitch extension project</div>
         <div class="my1">You can use the already <a target="_blank"
                 href="https://github.com/charlenesirianni/3tiercss/tree/master/src">compiled CSS files</a> and start
-            building the layout. If you wish to create your own
+            building the layout without even writing any additional CSS! If you wish to create your own
             theme, first have a look at how the styling is defined in each of the <a target="_blank"
                 href="https://github.com/charlenesirianni/3tiercss/tree/master/sass">3
-                tiers of SASS files</a>. You can simply change
-            the
-            color values and fonts, modify components like buttons or animation, or go further to add more classes.
+                tiers of SASS files</a>. There you can simply change the
+            color values and fonts, modify components like buttons or animation, or go further to add more classes. Then
+            compile the modified SASS files into CSS. To compile the CSS, run one of the scripts in pacakge.json, e.g.
+            <code>npm run compile:sasssdefaultpanel</code> to compile the panel.css for the default purple theme.
         </div>
 
         <div class="h2 mt4 bold">Layout examples</div>
@@ -108,8 +115,6 @@
                 <a href="./examples/mygame_theme/mobile.html">mobile extension</a>
             </li>
             <li class="my1 ml4">Fortnite game-themed <a href="./examples/fortnite_theme/index.htm">panel extensions</a>.
-            </li>
-            <li class="my1 ml4">League of Legends game-themed Teamfight Tactics video-overlay extensions. (Coming soon)
             </li>
             <li class="my1 ml4">Channel-themed panel extensions. (Coming soon)</li>
             <!-- <li class="my1 ml4">Blue-themed extensions
