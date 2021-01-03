@@ -1327,12 +1327,16 @@ a.button svg {
 .button:hover {
   filter: brightness(1.2); }
 
+.button--text:hover,
+.button--hollow:hover,
 .iconbutton:hover {
   filter: brightness(1.2);
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: rgba(102, 102, 102, 0.2); }
 
 .button:focus,
-.iconbutton:focus {
+.iconbutton:focus,
+.button:active,
+.iconbutton:active {
   box-shadow: 0 0 5px 0 var(--c-link);
   outline-style: none;
   outline-color: transparent; }

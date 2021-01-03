@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <link href="../../src/css/default_theme/video_overlay.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .t-frame {
+            display: inline-block;
+            margin: 0 40px 40px 0;
+            vertical-align: top;
+        }
+
+        .t-frame iframe {
+            display: inline-block;
+            width: 320px;
+            border: 1px solid #E6E2D9;
+            height: 470px;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .1), 0 2px 2px -2px rgba(0, 0, 0, .02), 0 1px 4px 0 rgba(0, 0, 0, .04)
+        }
+
+        .t-frame--small iframe {
+            width: 240px;
+        }
+
+        .t-frame--large iframe {
+            width: 450px;
+        }
+
+        .t-frame--extra-large iframe {
+            width: 1100px;
+            height: 700px;
+        }
+    </style>
+</head>
+
+
+<body class="fullheight p4 m0 h4 line-height-4">
+    <div class="">
+        <div class="h1 bold">Channel Themed Examples</div>
+        <div class="mt2 mb2">Branding is very important to Twitch creators. Many creators upload their own branded
+            header images for the panels on their About Page. Consider allowing creators to specify
+            their brand colors and even Google Fonts to create a UI that matches the brand.</div>
+        <div class="mt2 mb4">The examples below use the dark mode of the default purple theme as the base, then
+            overwrite some of
+            the colors and fonts with streamer's brand
+            colors, accent color, and Google Fonts
+            defined. The overwriting CSS can be found within the &lt;style&gt; element, inside the &lt;head&gt;
+            section in these HTML files.</div>
+        <div class="h2 bold my2">Panel Extensions</div>
+        <!-- <ul class="my2">
+            <li class="my1 ml4">List</li>
+            <li class="my1 ml4">List
+                <ul class="my2">
+                    <li class="my1 ml4">List</li>
+                    <li class="my1 ml4">List</li>
+                    <li class="my1 ml4">List</li>
+                    <li class="my1 ml4">List</li>
+                </ul>
+            </li>
+        </ul> -->
+        <div class="my2">
+            <div class="t-frame">
+                <iframe src="./panel_1.html"></iframe>
+                <div class=" h6">
+                    <a href="./panel_1.html" target="_blank">Open in a new
+                        window</a>
+                </div>
+            </div>
+            <div class="t-frame">
+                <iframe src="./panel_2.html"></iframe>
+                <div class=" h6">
+                    <a href="./panel_2.html" target="_blank">Open in a new
+                        window</a>
+                </div>
+            </div>
+            <div class="t-frame">
+                <iframe src="./panel_3.html"></iframe>
+                <div class=" h6">
+                    <a href="./panel_3.html" target="_blank">Open in a new
+                        window</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
